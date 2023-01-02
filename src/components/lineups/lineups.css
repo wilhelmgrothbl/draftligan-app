@@ -1,0 +1,63 @@
+.paper-teams {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    background-color: rgb(116, 24, 24);
+    padding: 20px;
+    justify-content: space-between;
+   
+  }
+
+  .lineup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gk {
+    color: blueviolet;
+    font-weight: bold;
+  }
+
+  .df {
+    font-weight: bold;
+    color: #700e0e;
+  }
+
+  .mf {
+    color: rgb(14, 165, 59);
+    font-weight: bold;
+  }
+
+  .st {
+    font-weight: bold;
+    color: #aa2a2a;
+  }
+  
+  .subs {
+    font-size: small;
+    font-style: italic;
+  }
+  .paper-school1 {
+    display: flex;
+    flex-direction: table;
+    background-color: rgb(185, 106, 106);
+  }
+  
+  .container {
+ 
+    display: flex;
+    justify-content:space-around;
+    /* margin-top: 3em;
+    margin: 0;
+    margin-bottom: 2em; */
+    line-height: 1.8em;
+
+    height: fit-content;
+    padding: 10px;
+  }
+  
+  .image {
+    background-image: url("../../assets/balls.jpg"), url("../../assets/who-s-denilo-F_-tPj6I95Q-unsplash.jpg") , url("../../assets/janosch-diggelmann-_cfhog9c5M4-unsplash.jpg");
+    background-repeat: no-repeat, no-repeat, repeat;
+    background-size: contain;
+  }
