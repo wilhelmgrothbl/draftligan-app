@@ -3,11 +3,12 @@
 * > * {
     font-family: "Poppins", cursive;
     margin: 0;
+
 }
 
 :root{
     --color-dark: #2C3131;
-    --color-light: #F3F3F2;
+    --color-light: #ffffff;
 }
 
 #main{
@@ -17,22 +18,31 @@
         height: 100%;
         margin-left: 200px;
         margin-right: 300px;
+        
 }
 
 .board {
     text-align: center;
-
-}
-
-.board .leaderboard{
     
 }
+
+
+
+.info-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:flex-start;
+    padding: 10px;
+    height: 100%;
+    margin-right: 30px;
+    line-height: 1.4;
+}
+
 
 .leaderboard {
     margin-top: 1em;
 }
-
-
 
 #profile{
     /* display: flex; */

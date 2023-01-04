@@ -21,8 +21,8 @@ function Item(data){
                         <div className="item">
                             <img src={value.img} alt="" />
             
-                            <div className="info">
-                                <h3 className='name text-dark'>{value.name}</h3>    
+                            <div className="info-profile">
+                                <p>{value.name}</p>    
                                 <span>{value.team}</span>
                             </div>                
                         </div>

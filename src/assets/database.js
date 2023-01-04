@@ -3,7 +3,7 @@ export const Standings = [
         name: "Wilhelm Groth",
         score: 544,
         team: "A team of Carraghers",
-        img: "https://scontent-arn2-1.xx.fbcdn.net/v/t1.18169-9/255333_3950245307935_1849463929_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=de6eea&_nc_ohc=BnBtpeZ9yWsAX-OgYqo&tn=pImbR-kqUMD591Zb&_nc_ht=scontent-arn2-1.xx&oh=00_AfDsElDayWSxOPzJ62zYn5sEgc5Ng_O2ulQHne3TsgBM_Q&oe=63D41B57"
+        img: "https://media.licdn.com/dms/image/D4D03AQHFf2e4hlKQsw/profile-displayphoto-shrink_800_800/0/1669793398317?e=1678320000&v=beta&t=O_2jkTUmAPlWAK4-lLjWhu4Lm4CX9iUnNa5gCwFT260"
     }, 
     {
         name: "Björn Gabrielsson", 

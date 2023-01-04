@@ -1,8 +1,9 @@
 import React from 'react'
+import './home.css'
 
 
 export default function home() {
-    
+
   return (
     <div className='home-container'>
       <div className='top-title'>
@@ -12,20 +13,86 @@ export default function home() {
 
       <div className='info-home'>
         <div className='top'>
+
           <hr></hr>
           <div className='flex-hej'>
-          <div>
-            <table className='winners'>
-            <li><p className='title-top'>Draftligan 2020-2021</p></li>
-              <tr><td><i class="fas fa-trophy"></i> 1.    Wille - A Team of Carraghers</td>1786</tr>
-              <tr><td>2. Micke - Källströms Kabaré</td>1681</tr>
-              <tr><td>3. Lasse - Villains</td>1679p</tr>
-              <tr><td>4. Joel - BK Slaggberget</td>1648p</tr>
-              <tr><td>5. Lofsen  Mini-Spurs</td>1465p</tr>
-              <tr><td>6. Tompa - Plopparna</td>1418p</tr>
-              <tr><td>7. Björn - FC Premium</td>1275p</tr>
-              <tr><td>8. Forsen - IFK Måsfobi</td>1123p</tr>
-            </table >
+            <div>
+              <table className='winners'>
+                <li><p className='title-top'>Draftligan 2021-2022</p></li>
+                <tr><td><i class="fas fa-trophy"></i>  Wille - A Team of Carraghers</td>1903p</tr>
+                <tr><td>2. Lofsen - Mini-Spurs</td>1734p</tr>
+                <tr><td>3. Björn - FC Premium</td>1532p</tr>
+                <tr><td>4. Lars - Villains</td>1525p</tr>
+                <tr><td>5. Micke - Källströms Kabaré</td>1521p</tr>
+                <tr><td>6. Joel - BK Slaggberget</td>1498p</tr>
+                <tr><td>7. Tompa - Plopparna</td>1376p</tr>
+                <tr><td>8. Forsen - IFK Måsfobi</td>1150p</tr>
+
+              </table >
+            </div>
+            <div className='year'>
+              <p className='title-top-right'>Årets målvakt</p>
+              <p className='semi-title'>Alison Becker, Källströms Kabaré</p>
+              <p className='description'>Flest hållna nollor och poängbäst bland målvakterna.</p>
+              <p className='title-top-right'>Årets mittfältare</p>
+              <p className='semi-title'>Hueng-Min Son, A Team of Carraghers</p>
+              <p className='description'>Inte poängbäst bland alla "mittfältare" men han spelar åtminstone det. Levererade när både hans lag behövde honom som bäst. </p>
+              <p className='title-top-right'>Årets anfalallare</p>
+              <p className='semi-title'>Harry Kane, Mini-Spurs</p>
+              <p className='description'>Nästan lite tyst säsong för att vara Kane, men fortfarande poängbästa anfallare.</p>
+              <p className='title-top-right'>Årets fynd</p>
+              <p className='semi-title'>Pablo Fornals, Villains</p>
+              <p className='description'> Vald i 13e rundan och samlade ihop respektabla 117 poäng.</p>
+              <p className='title-top-right'>Årets flopp</p>
+              <p className='semi-title'>Pierre-Emerick Aubameyang, FC Premium</p>
+              <p className='description'>Motivering överflödig. </p>
+              <p className='title-top-right'>Årets anglosaxiska övertro</p>
+              <p className='semi-title'>Joel Nordkvist, BK Slaggberget</p>
+              <p className='description'>Valde Grealish och Sancho i första och andra rundan. Samlade gemensamnt ihop en poäng fler än Alisson Becker.</p>
+              
+            </div>
+            <div className='year'>
+
+              <p className='title-top-right'>Årets fynd (2)</p>
+              <p className='semi-title'>Joâo Cancelo, A Team of Carraghers</p>
+              <p className='description'>Valdes i tionde rundan och samlade ihop näst flest poäng bland försvararna. </p>
+              <p className='title-top-right'>Årets FPL-spelare</p>
+              <p className='semi-title'>Mohamed Salah</p>
+              <p className='description'>Att ha flest poäng och vinna både mål- och assistligan går inte att ignorera. </p>
+              <p className='title-top-right'>Årets regeltolkare</p>
+              <p className='semi-title'>Wilhelm Groth, AToC</p>
+              <p className='description'>Råkade minnas fel och göra missar vid lägliga tillfällen. Men hade stenkoll när någon annan hade en fråga.</p>
+              <p className='title-top-right'>Årets minst förbättrade</p>
+              <p className='semi-title'>Fredrik Torin, IFK Måsfobi</p>
+              <p className='description'>Snittade ett poäng lägre per omgång när han tvingades lämna in startelvor. </p>
+              <p className='title-top-right'>Årets manager</p>
+              <p className='semi-title'>Wilhelm Groth, AToC</p>
+              <p className='description'>Ökade på sin segermarginal från fjolåret, var aldrig riktigt hotad. Och har dessutom sannolikt lyckats addera en regel inför kommande säsong.</p>
+              <p className='title-top-right'>Årets mygelspelare</p>
+              <p className='semi-title'>Mohammed Salah, FC Premium</p>
+              <p className='description'>Världens minst mittfältiga mittfältare. Råkar ibland vara på egen planhalva. </p>
+            </div>
+          </div>
+
+
+
+
+
+
+          <hr></hr>
+          <div className='flex-hej'>
+            <div>
+              <table className='winners'>
+                <li><p className='title-top'>Draftligan 2020-2021</p></li>
+                <tr><td><i class="fas fa-trophy"></i>  Wille - A Team of Carraghers</td>1786p</tr>
+                <tr><td>2. Micke - Källströms Kabaré</td>1681p</tr>
+                <tr><td>3. Lasse - Villains</td>1679p</tr>
+                <tr><td>4. Joel - BK Slaggberget</td>1648p</tr>
+                <tr><td>5. Lofsen  Mini-Spurs</td>1465p</tr>
+                <tr><td>6. Tompa - Plopparna</td>1418p</tr>
+                <tr><td>7. Björn - FC Premium</td>1275p</tr>
+                <tr><td>8. Forsen - IFK Måsfobi</td>1123p</tr>
+              </table >
             </div>
             <div className='year'>
               <p className='title-top-right'>Årets målvakt</p>
@@ -70,21 +137,21 @@ export default function home() {
             </div>
           </div>
 
-          
+
           <hr></hr>
           <div className='flex-hej'>
             <div>
-            <table className='winners'>
-            <li><p className='title-top'>Draftligan 2019-2020</p></li>
-              <tr><td><i class="fas fa-trophy"></i> 1.  Björn FC Premium</td> 1566 </tr>
-              <tr><td>2. Tompa  Plopparna</td>   1542p</tr>
-              <tr><td>3. Wille  A Team of Carraghers</td>1526p</tr>
-              <tr><td>4. Micke  Fyrklöverns FK</td> 1477p</tr>
-              <tr><td>5. Lofsen  Mini-Spurs</td>  1469p</tr>
-              <tr><td>6. Joel   BK Slaggberget</td>1463p</tr>
-              <tr><td>7. Lars  Villains   </td>1259</tr>
-              <tr><td>8. Forsen  IFK Måsfobi </td></tr>
-            </table >
+              <table className='winners'>
+                <li><p className='title-top'>Draftligan 2019-2020</p></li>
+                <tr><td><i class="fas fa-trophy"></i>  Björn FC Premium</td> 1566p</tr>
+                <tr><td>2. Tompa - Plopparna</td>   1542p</tr>
+                <tr><td>3. Wille - A Team of Carraghers</td>1526p</tr>
+                <tr><td>4. Micke - Fyrklöverns FK</td> 1477p</tr>
+                <tr><td>5. Lofsen - Mini-Spurs</td>  1469p</tr>
+                <tr><td>6. Joel - BK Slaggberget</td>1463p</tr>
+                <tr><td>7. Lars - Villains   </td>1259p </tr>
+                <tr><td>8. Forsen - IFK Måsfobi </td>1143p</tr>
+              </table >
             </div>
             <div className='year'>
               <p className='title-top-right'>Årets målvakt</p>
@@ -114,19 +181,19 @@ export default function home() {
               <p className='semi-title'>Fredrik Forslin, IFK Måsfobi</p>
               <p className='description'>Visade mindre intresse än Christian Eriksen tills han hotades med uteslutning av ligans president och lyckades tillsammans med osedvanligt flyt och spelare som tidigare knappt fick spela med b-laget som hittade formen under coronapandemin få ihop några hyggliga omgångar. Ändå rättvist tvärsist.</p>
               <p className='title-top-right'>Årets regeltolkare</p>
-              <p className='description'> className='semi-title'Wilhelm Groth, A Team of Carraghers</p>
+              <p className='description'>Wilhelm Groth, A Team of Carraghers</p>
               <p className='description'>Manipulerade, smörade, skämtade, hotade, argumenterade och bytte som en vanvettig. Kanske sin egen värsta fiende.</p>
               <p className='title-top-right'>Årets spelare</p>
               <p className='semi-title'>Kevin De Bruyne, FC Premium</p>
               <p className='description'>Fick alla som heter Jordan Hendersson att se ut som en dålig variant av en trasig krona. Målskytt, framspelare, pådrivare och allmänt fotbollsgeni. </p>
             </div>
-          </div>          
+          </div>
 
           <hr></hr>
           <div className='flex-hej'>
             <table className='winners'>
               <li><p className='title-top'>Draftligan 2018-2019</p></li>
-              <tr><td>1. Micke - Fyrklöverns FK</td> 1596p </tr>
+              <tr><td> <i class="fas fa-trophy" ></i> 1. Micke - Fyrklöverns FK</td>  1596p </tr>
               <tr><td>2. Joel - BK Slaggberget</td>   1530p</tr>
               <tr><td>3. Björn - FC Premium</td>   1499p</tr>
               <tr><td>4. Tompa - Plopparna   </td> 1454p</tr>
@@ -158,11 +225,11 @@ export default function home() {
             </div>
           </div>
 
-         <hr></hr>
+          <hr></hr>
           <div className='flex-hej'>
             <table className='winners'>
               <li><p className='title-top'>Draftligan 2017-2018</p></li>
-              <tr><td><i class="fas fa-trophy"></i> 1. Wille - Ziemligh Gut</td> 1226p </tr>
+              <tr><td><i class="fas fa-trophy"></i> 1.  Wille - Ziemligh Gut</td> 1226p </tr>
               <tr><td>2. Joel - BK Slaggberget</td>   1175p</tr>
               <tr><td>3. Lofsen - Mini-Spurs</td>   1047p</tr>
               <tr><td>4. Lars - Villains   </td> 1032p</tr>
@@ -200,10 +267,10 @@ export default function home() {
             </div>
           </div>
 
-    
 
 
-      
+
+
         </div>
 
 

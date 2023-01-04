@@ -1,63 +1,115 @@
+.container {
+
+  margin-left: 10em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  line-height: 1em;
+  padding: 10px;
+  width: 55vh;
+  height: 45vh;
+
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.paper-card {
+  position: relative;
+  flex: 1;
+  max-width: 300px;
+  height: 160px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
 .paper-teams {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    background-color: rgb(116, 24, 24);
-    padding: 20px;
-    justify-content: space-between;
-   
-  }
-
-  .lineup {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .gk {
-    color: blueviolet;
-    font-weight: bold;
-  }
-
-  .df {
-    font-weight: bold;
-    color: #700e0e;
-  }
-
-  .mf {
-    color: rgb(14, 165, 59);
-    font-weight: bold;
-  }
-
-  .st {
-    font-weight: bold;
-    color: #aa2a2a;
-  }
   
-  .subs {
-    font-size: small;
-    font-style: italic;
-  }
-  .paper-school1 {
-    display: flex;
-    flex-direction: table;
-    background-color: rgb(185, 106, 106);
-  }
-  
-  .container {
- 
-    display: flex;
-    justify-content:space-around;
-    /* margin-top: 3em;
-    margin: 0;
-    margin-bottom: 2em; */
-    line-height: 1.8em;
+  background-image: url("https://cdn.fantasyfootballscout.co.uk/wp-content/plugins/ffs-team-news-plugin/images/team-pitch.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 100%;
+  width: 100vh;
 
-    height: fit-content;
-    padding: 10px;
-  }
-  
-  .image {
-    background-image: url("../../assets/balls.jpg"), url("../../assets/who-s-denilo-F_-tPj6I95Q-unsplash.jpg") , url("../../assets/janosch-diggelmann-_cfhog9c5M4-unsplash.jpg");
-    background-repeat: no-repeat, no-repeat, repeat;
-    background-size: contain;
-  }
+
+}
+
+.lineup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem;
+  padding: 3px;
+  justify-content: space-between;
+
+}
+
+.team-name-container {
+  padding: 0.3em;
+}
+
+.team-name {
+  font-weight: bold;
+}
+
+
+.gk {
+  text-align: center;
+  margin-bottom: 40px;
+  color: white;
+  margin-bottom: 5vh;
+}
+
+.df {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  margin-bottom: 5vh;
+}
+
+.mf {
+  color: white;
+  tab-size: 3;
+  margin-bottom: 2em;
+  margin-top: 1vh;
+}
+
+.mf2 {
+  color: white;
+  tab-size: 3;
+  margin-bottom: 3.3em;
+  margin-top: 0.1em;
+
+}
+
+.st {
+  color: white;
+  margin-top: 2vh;
+}
+
+
+.bench {
+  padding: 0.3em;
+  margin-top: 2.3em;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.subs {
+  margin-bottom: 0.2e;
+}
+
+
+
+
+.image {
+  background-image: url("../../assets/balls.jpg"), url("../../assets/who-s-denilo-F_-tPj6I95Q-unsplash.jpg"), url("../../assets/janosch-diggelmann-_cfhog9c5M4-unsplash.jpg");
+  background-repeat: no-repeat, no-repeat, repeat;
+  background-size: contain;
+}
