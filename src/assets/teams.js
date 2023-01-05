@@ -26,8 +26,7 @@ export const getTeams = [
         firstName: "Tommy",
         lastName: " Forslin",
         icon: "fas fa-tshirt",
-        img: "https://scontent-arn2-2.xx.fbcdn.net/v/t39.30808-6/290050823_10158643272437056_8780626915162579925_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=p3YrkRm4rgQAX-tUh7a&_nc_ht=scontent-arn2-2.xx&oh=00_AfDreaKy8Jy6oyJF_sUJG6chqs0jYzeg-zyVUo4dFExu5w&oe=63B2EB51",
-       
+        img: "https://scontent-arn2-2.xx.fbcdn.net/v/t1.18169-9/935208_10201312750441188_1215249357_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Ei5vpnt6ozIAX9UYQXK&_nc_ht=scontent-arn2-2.xx&oh=00_AfCGQKmO2UvQm_q-XPG-swoiXqMcVB8qTi1xApVXgKP_uA&oe=63D4CBE6",
         lineup:
         {
             "goalkeeper": "José Sá",
