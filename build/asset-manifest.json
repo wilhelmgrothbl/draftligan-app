@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cc3c348c.css",
+    "main.js": "/static/js/main.6b87bf4c.js",
+    "static/media/who-s-denilo-F_-tPj6I95Q-unsplash.jpg": "/static/media/who-s-denilo-F_-tPj6I95Q-unsplash.5c5cb2e6bf69a60f62f0.jpg",
+    "static/media/PLPLPL.jpg": "/static/media/PLPLPL.942fbb09f65e71801864.jpg",
+    "index.html": "/index.html",
+    "main.cc3c348c.css.map": "/static/css/main.cc3c348c.css.map",
+    "main.6b87bf4c.js.map": "/static/js/main.6b87bf4c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cc3c348c.css",
+    "static/js/main.6b87bf4c.js"
+  ]
+}
