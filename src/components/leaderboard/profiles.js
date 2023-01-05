@@ -1,6 +1,7 @@
 import React from 'react'
 import './leaderboard.css';
 
+
 export default function profiles({ Standings }) {
   return (
     <div className='App' id="main">
@@ -19,7 +20,7 @@ function Item(data){
                 data.map((value, index) => (
                     <div className="flex"  key={index}>
                         <div className="item">
-                            <img src={value.img} alt="" />
+                            <img src={value.img} alt="här var det en ko" />
             
                             <div className="info-profile">
                                 <p className='name-title'>{value.name}</p>    

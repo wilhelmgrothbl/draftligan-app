@@ -13,11 +13,11 @@ export default function lineup() {
                     <div>
                         <div className='row-test'>
                             <div className='card-01'>
-                                 <div className='check'>
-                                    <img className='img' src={data.img} alt="no image"></img>
+                                <div className='check'>
+                                    <img className='img' src={data.img} alt="no cow"></img>
                                     <p className='team-name'>{data.teamname} </p>
                                     <p className='team-coach'>{data.firstName} {data.lastName}</p>
-                                </div> 
+                                </div>
                                 <div className='lineup'>
                                     <span className='gk'>{data.lineup.goalkeeper}</span>
                                     <span className='df'><p>{data.lineup.defender}</p></span>
@@ -33,7 +33,7 @@ export default function lineup() {
                                     </div>
 
                                 </div>
-                            
+
                             </div>
 
                         </div>
