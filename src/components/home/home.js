@@ -7,7 +7,7 @@ export default function home() {
   return (
     <div className='home-container'>
       <div className='top-title'>
-        <h1>Historia</h1>
+        <h1>Historidsa</h1>
 
       </div>
 
