@@ -14,10 +14,5 @@ export const MenuItems = [
         url: 'lineup',
         cName: 'nav-links'
     },
-    {
-        title: 'Mobile',
-        url: '#',
-        cName: 'nav-links-mobile'
-    },
-
+   
 ]

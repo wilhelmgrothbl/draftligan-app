@@ -22,8 +22,8 @@ function Item(data){
                             <img src={value.img} alt="" />
             
                             <div className="info-profile">
-                                <p>{value.name}</p>    
-                                <span>{value.team}</span>
+                                <p className='name-title'>{value.name}</p>    
+                                <span className='team-lower-title'>{value.team}</span>
                             </div>                
                         </div>
                         <div className="item">

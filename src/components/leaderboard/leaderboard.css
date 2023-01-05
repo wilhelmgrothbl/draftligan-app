@@ -1,31 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-*>* {
+* > * {
     font-family: "Poppins", cursive;
     margin: 0;
 
 }
 
-:root {
+:root{
     --color-dark: #2C3131;
     --color-light: #ffffff;
 }
 
-#main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 50%;
-    margin-left: 30vh;
-    border-radius: 40px;
-    background-color: rgb(255, 255, 255);
-    
+#main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin-left: 200px;
+        margin-right: 300px;
+        
 }
 
 .board {
     text-align: center;
-    background-color: aqua;
+    
 }
 
 
@@ -33,26 +31,31 @@
 .info-profile {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content:center;
+    align-items:flex-start;
     padding: 10px;
     height: 100%;
     margin-right: 30px;
-    line-height: 1.4;
+    line-height: 1;
 }
 
+.name-title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
 
 .leaderboard {
     margin-top: 1em;
 }
 
-#profile {
+#profile{
     /* display: flex; */
 
     margin-top: 3em;
 }
 
-#profile .flex {
+#profile .flex{
     display: flex;
     justify-content: space-between;
     gap: 1em;
@@ -60,44 +63,54 @@
     margin-bottom: 2em;
 }
 
-#profile .flex .item {
+#profile .flex .item{
     display: flex;
     align-items: center;
 }
 
-#profile .flex img {
+#profile .flex img{
     float: left;
-    width: 100px;
+    width:  150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#profile .flex .info{
+   padding: 1em;
+}
+
+.text-dark{
+    color: var(--color-dark);
+}
+
+@media screen and (max-width: 960px) {
+    
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-left: 200px;
+    margin-right: 300px;
+}
+
+.board {
+text-align: center;
+
+}
+
+.board .leaderboard{
+margin-bottom: 1em;
+}
+
+
+#profile .flex img{
+    float: left;
+    width:  100px;
     height: 100px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-#profile .flex .info {
-    padding: 1em;
-}
-
-.text-dark {
-    color: var(--color-dark);
-}
-
-@media screen and (max-width: 960px) {
-
-    #main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        margin-left: 200px;
-        margin-right: 300px;
-    }
-
-    .board {
-        text-align: center;
-
-    }
-
-    .board .leaderboard {
-        margin-bottom: 1em;
-    }
 }

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Profiles from './profiles';
 import { Standings } from '../../assets/database';
 import './leaderboard.css';
-
+import { gameweek } from '../../assets/database';
 
 export default function Leaderboard() {
     
@@ -10,7 +10,7 @@ export default function Leaderboard() {
 
   return (
     <div className="board">
-        <h1 className="leaderboard">Leaderboard</h1>
+        <h1 className="leaderboard">Totalställning efter omgång {gameweek.gw}</h1>
         <Profiles Standings={between(Standings, period)}></Profiles>
     </div>
   )

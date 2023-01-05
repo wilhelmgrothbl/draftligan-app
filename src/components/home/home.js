@@ -7,7 +7,7 @@ export default function home() {
   return (
     <div className='home-container'>
       <div className='top-title'>
-        <h1>Historidsa</h1>
+        <h1>Historia</h1>
 
       </div>
 
@@ -16,7 +16,7 @@ export default function home() {
 
           <hr></hr>
           <div className='flex-hej'>
-            <div>
+            <div className='year1'>
               <table className='winners'>
                 <li><p className='title-top'>Draftligan 2021-2022</p></li>
                 <tr><td><i class="fas fa-trophy"></i>  Wille - A Team of Carraghers</td>1903p</tr>
@@ -37,7 +37,7 @@ export default function home() {
               <p className='title-top-right'>Årets mittfältare</p>
               <p className='semi-title'>Hueng-Min Son, A Team of Carraghers</p>
               <p className='description'>Inte poängbäst bland alla "mittfältare" men han spelar åtminstone det. Levererade när både hans lag behövde honom som bäst. </p>
-              <p className='title-top-right'>Årets anfalallare</p>
+              <p className='title-top-right'>Årets anfallare</p>
               <p className='semi-title'>Harry Kane, Mini-Spurs</p>
               <p className='description'>Nästan lite tyst säsong för att vara Kane, men fortfarande poängbästa anfallare.</p>
               <p className='title-top-right'>Årets fynd</p>
@@ -49,7 +49,7 @@ export default function home() {
               <p className='title-top-right'>Årets anglosaxiska övertro</p>
               <p className='semi-title'>Joel Nordkvist, BK Slaggberget</p>
               <p className='description'>Valde Grealish och Sancho i första och andra rundan. Samlade gemensamnt ihop en poäng fler än Alisson Becker.</p>
-              
+
             </div>
             <div className='year'>
 
@@ -81,7 +81,7 @@ export default function home() {
 
           <hr></hr>
           <div className='flex-hej'>
-            <div>
+            <div className='year1'>
               <table className='winners'>
                 <li><p className='title-top'>Draftligan 2020-2021</p></li>
                 <tr><td><i class="fas fa-trophy"></i>  Wille - A Team of Carraghers</td>1786p</tr>
@@ -140,7 +140,7 @@ export default function home() {
 
           <hr></hr>
           <div className='flex-hej'>
-            <div>
+            <div className='year1'>
               <table className='winners'>
                 <li><p className='title-top'>Draftligan 2019-2020</p></li>
                 <tr><td><i class="fas fa-trophy"></i>  Björn FC Premium</td> 1566p</tr>
@@ -189,97 +189,43 @@ export default function home() {
             </div>
           </div>
 
-          <hr></hr>
-          <div className='flex-hej'>
-            <table className='winners'>
-              <li><p className='title-top'>Draftligan 2018-2019</p></li>
-              <tr><td> <i class="fas fa-trophy" ></i> 1. Micke - Fyrklöverns FK</td>  1596p </tr>
-              <tr><td>2. Joel - BK Slaggberget</td>   1530p</tr>
-              <tr><td>3. Björn - FC Premium</td>   1499p</tr>
-              <tr><td>4. Tompa - Plopparna   </td> 1454p</tr>
-              <tr><td>5. Lofsen - Mini-Spurs</td>  1395p</tr>
-              <tr><td>6. Wille - A Team of Carraghers  </td>  1386p</tr>
-              <tr><td>7. Lars - Villains   </td>1384p</tr>
-              <tr><td>8. Forsen - IFK Måsfobi </td>  1337p</tr>
-            </table >
-
-            <div className='year'>
-              <p className='title-top-right'>Årets målvakt</p>
-              <p>Ingen data</p>
-              <p className='title-top-right'>Årets försvarare</p>
-              <p>Ingen data</p>
-              <p className='title-top-right'>Årets mittfältare</p>
-              <p>Ingen data</p>
-              <p className='title-top-right'>Årets anfalallare</p>
-              <p>Ingen data</p>
-            </div>
-            <div className='year'>
-              <p className='title-top-right'>Årets mygelspelare</p>
-              <p>Ingen data</p>
-              <p className='title-top-right'>Årets manager</p>
-              <p>Ingen data</p>
-              <p className='title-top-right'>Årets besvikelse</p>
-              <p>Ingen data</p>
-              <p className='title-top-right'>Årets flopp</p>
-              <p>Ingen data</p>
-            </div>
-          </div>
-
-          <hr></hr>
-          <div className='flex-hej'>
-            <table className='winners'>
-              <li><p className='title-top'>Draftligan 2017-2018</p></li>
-              <tr><td><i class="fas fa-trophy"></i> 1.  Wille - Ziemligh Gut</td> 1226p </tr>
-              <tr><td>2. Joel - BK Slaggberget</td>   1175p</tr>
-              <tr><td>3. Lofsen - Mini-Spurs</td>   1047p</tr>
-              <tr><td>4. Lars - Villains   </td> 1032p</tr>
-              <tr><td>5. Björn - FC Premium  </td>  975p</tr>
-              <tr><td>6. Forsen - FK Måsfobi  </td>  942p</tr>
-              <tr><td>7. Tompa - Plopparna   </td>927p</tr>
-              <tr><td>8. Micke - Ett kraftigt jävla gäng </td>  844p</tr>
-              <tr><td>9. Niklas - Bortglömda Brasilien </td>734p</tr>
-            </table >
-            <div className='year'>
-              <p className='title-top-right'>Årets målvakt</p>
-              <p>Ingen data</p>
-              <p className='title-top-right'>Årets försvarare</p>
-              <p>Ingen data</p>
-              <p className='title-top-right'>Årets mittfältare</p>
-              <p>Ingen data</p>
-              <p className='title-top-right'>Årets anfallare</p>
-              <p>Ingen data</p>
-              <p className='title-top-right'>Årets flopp</p>
-              <p>Ingen data</p>
-
-            </div>
-            <div className='year'>
-              <p className='title-top-right'>Årets manager</p>
-              <p>Ingen data</p>
-              <p className='title-top-right'>Årets förbättringspotential</p>
-              <p>Ingen data</p>
-              <p className='title-top-right'>Årets regeltolkare</p>
-              <p>Ingen data</p>
-              <p className='title-top-right'>Årets spelare</p>
-              <p>Ingen data</p>
-              <p className='title-top-right'>Årets fynd</p>
-              <p>Ingen data</p>
-
-            </div>
-          </div>
-
-
-
-
-
-        </div>
-
-
-      </div>
       <hr></hr>
-    </div>
+          <div className='flex-hej'>
+            <div className='year1'>
+              <table className='winners'>
+                <li><p className='title-top'>Draftligan 2018-2019</p></li>
+                <tr><td> <i class="fas fa-trophy" ></i>  Micke - Fyrklöverns FK</td>  1596p </tr>
+                <tr><td>2. Joel - BK Slaggberget</td>   1530p</tr>
+                <tr><td>3. Björn - FC Premium</td>   1499p</tr>
+                <tr><td>4. Tompa - Plopparna   </td> 1454p</tr>
+                <tr><td>5. Lofsen - Mini-Spurs</td>  1395p</tr>
+                <tr><td>6. Wille - A Team of Carraghers  </td>  1386p</tr>
+                <tr><td>7. Lars - Villains   </td>1384p</tr>
+                <tr><td>8. Forsen - IFK Måsfobi </td>  1337p</tr>
+              </table >
+            </div>
 
+              <div className='year1'>
+                <table className='winners'>
+                  <li><p className='title-top'>Draftligan 2017-2018</p></li>
+                  <tr><td><i class="fas fa-trophy"></i>   Wille - Ziemligh Gut</td> 1226p </tr>
+                  <tr><td>2. Joel - BK Slaggberget</td>   1175p</tr>
+                  <tr><td>3. Lofsen - Mini-Spurs</td>   1047p</tr>
+                  <tr><td>4. Lars - Villains   </td> 1032p</tr>
+                  <tr><td>5. Björn - FC Premium  </td>  975p</tr>
+                  <tr><td>6. Forsen - FK Måsfobi  </td>  942p</tr>
+                  <tr><td>7. Tompa - Plopparna   </td>927p</tr>
+                  <tr><td>8. Micke - Ett kraftigt jävla gäng </td>  844p</tr>
+                  <tr><td>9. Niklas - Bortglömda Brasilien </td>734p</tr>
+                </table >
 
-
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    
   )
 }
 
