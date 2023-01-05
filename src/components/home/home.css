@@ -1,5 +1,5 @@
 .home-container {
-    background-image: url("../../assets/james-kirkup-vRp9YvR6Q1c-unsplash.jpg");
+    background-image: url("../../assets/who-s-denilo-F_-tPj6I95Q-unsplash.jpg");
     /* You must set a specified height */
     background-position: center;
     /* Center the image */
@@ -40,21 +40,19 @@
 
 
 .info-home {
-    background-color: rgb(255, 255, 255);
     opacity: 0.9;
     height: 100%;
 }
 
 .middle {
     display: inline-block;
-    background-color: rgb(166, 201, 158);
     width: 100%;
     padding-bottom: 10px;
 }
 
 .top {
     display: inline-block;
-    background-color: rgb(166, 201, 158);
+    background-color: rgb(75, 123, 65);
     width: 100%;
 
 }
@@ -75,7 +73,7 @@
 }
 
 .year {
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
     padding: 10px;
     opacity: 0.8;
     border-radius: 30px;

@@ -174,7 +174,7 @@ export default function home() {
               <p className='description'>Valdes tidigt men visade sig helt ointresserad av att spela och sattes på ett plan till Italien.</p>
             </div>
             <div className='year'>
-              <p className='title-top-right'>Årets upp som en sol en som en pannkaka"</p>
+              <p className='title-top-right'>Årets upp som en sol, ner som en pannkaka</p>
               <p className='semi-title'>Teemu Pukki, FC Premium</p>
               <p className='description'>Gav sin manager svår hybris i säsongsinledningen innan även han själv också kom ihåg att han var finländare och dålig.</p>
               <p className='title-top-right'>Årets va, har han inte fått sparken?</p>
