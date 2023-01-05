@@ -136,7 +136,7 @@ export const getTeams = [
     {
         teamname: "Källströms Kabaré",
         firstName: "Mikael",
-        img: "https://scontent-arn2-1.xx.fbcdn.net/v/t39.30808-6/241453913_10159015062757912_2710311834549830381_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=anoJrhaiMwYAX_icMPj&_nc_ht=scontent-arn2-1.xx&oh=00_AfA5Ozc2RC0GtUKSIVQHmABRxWefbFZTmVRceGHCBySshw&oe=63B320D6",
+        img: url("./micke.jpg"),
         lastName: "Andersson",
         lineup:
         {
