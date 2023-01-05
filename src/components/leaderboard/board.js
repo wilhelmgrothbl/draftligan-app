@@ -6,13 +6,7 @@ import './leaderboard.css';
 
 export default function Leaderboard() {
     
-    const [period, setPeriod] = useState(0);
-
-    const handleClick = (e) => {
-       
-      setPeriod(e.target.dataset.id)
-    }
-   
+    const [period] = useState(0);
 
   return (
     <div className="board">
@@ -31,7 +25,7 @@ function between(data, between){
 
     let filter = data.filter(val => {
         let userDate = new Date(val.dt);
-        if (between == 0) return val;
+        if (between === 0) return val;
         return previous <= userDate && today >= userDate;
     })
 

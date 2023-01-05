@@ -1,8 +1,7 @@
 import React from 'react'
-import Paper from "@mui/material/Paper";
 import { getTeams } from '../../assets/teams';
 import './lineup.css'
-import { radioClasses } from '@mui/material';
+
 
 
 export default function lineup() {
@@ -15,7 +14,7 @@ export default function lineup() {
                         <div className='row-test'>
                             <div className='card-01'>
                                  <div className='check'>
-                                    <img className='img' src={data.img}></img>
+                                    <img className='img' src={data.img} alt="no image"></img>
                                     <p className='team-name'>{data.teamname} </p>
                                     <p className='team-coach'>{data.firstName} {data.lastName}</p>
                                 </div> 
