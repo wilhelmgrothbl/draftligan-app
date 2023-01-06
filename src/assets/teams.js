@@ -25,7 +25,7 @@ export const getTeams = [
         teamname: "Plopparna",
         firstName: "Tommy",
         lastName: " Forslin",
-        img: "https://scontent-arn2-2.xx.fbcdn.net/v/t1.18169-9/935208_10201312750441188_1215249357_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Ei5vpnt6ozIAX9UYQXK&_nc_ht=scontent-arn2-2.xx&oh=00_AfCGQKmO2UvQm_q-XPG-swoiXqMcVB8qTi1xApVXgKP_uA&oe=63D4CBE6",
+        img: "https://scontent.xx.fbcdn.net/v/t1.15752-9/318528210_1424218431443256_9040277765076907010_n.jpg?stp=dst-jpg_p206x206&_nc_cat=102&ccb=1-7&_nc_sid=aee45a&_nc_ohc=K8Ro5sroPA0AX8s6kHS&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdSdlMM08x0dvYwfUEUkJ8HVh7ycdwopogpvX4gwgpJGiA&oe=63DEE74F",
         lineup:
         {
             "goalkeeper": "José Sá",
@@ -60,7 +60,7 @@ export const getTeams = [
         teamname: "FC Premium",
         firstName: "Björn",
         lastName: "Gabrielsson",
-        img: "https://scontent-arn2-1.xx.fbcdn.net/v/t39.30808-6/302487462_2481746258634365_5148902375641916711_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=y9OzSeVGWhcAX8ovgK7&_nc_ht=scontent-arn2-1.xx&oh=00_AfBauHhDreVLogZn9RP2padE4mW1qkN99r0ULhziYoWCnA&oe=63B143D2",
+        img: "https://scontent-arn2-1.xx.fbcdn.net/v/t1.15752-9/318615647_2996241000682006_7276209106184566331_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=ae9488&_nc_ohc=S6ciW_klfy4AX-8DF5S&_nc_ht=scontent-arn2-1.xx&oh=03_AdSfUijV95PJeITB-lQ_RcnYkXtKAUjIQ25A8pmC2MNcpA&oe=63DECA7A",
         lineup:
         {
             "goalkeeper": "Ederson Moraes",
@@ -133,7 +133,7 @@ export const getTeams = [
         teamname: "Källströms Kabaré",
         firstName: "Mikael",
         lastName: "Andersson",
-        img: "https://scontent-arn2-1.xx.fbcdn.net/v/t1.18169-9/165228_1261453912814_779331_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=cdbe9c&_nc_ohc=vxNRks_-dtUAX_Vlz4V&tn=pImbR-kqUMD591Zb&_nc_ht=scontent-arn2-1.xx&oh=00_AfC3-P-n9np6qzK2Nz3Am0H3XhGVByBlyZhRfr2AMpLhVA&oe=63D4D256",
+        img: "https://www.iggesundsik.se/images/172/3312/_user19059_1.jpg",
         lineup:
         {
             "goalkeeper": "Alisson Becker",
