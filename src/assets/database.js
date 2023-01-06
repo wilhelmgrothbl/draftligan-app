@@ -13,7 +13,7 @@ export const Standings = [
         name: "Björn Gabrielsson", 
         score: 662, 
         team: "FC Premium", 
-        img: "https://scontent-arn2-1.xx.fbcdn.net/v/t39.30808-6/302487462_2481746258634365_5148902375641916711_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=y9OzSeVGWhcAX8ovgK7&_nc_ht=scontent-arn2-1.xx&oh=00_AfBauHhDreVLogZn9RP2padE4mW1qkN99r0ULhziYoWCnA&oe=63B143D2"
+        img: "https://scontent-arn2-1.xx.fbcdn.net/v/t1.15752-9/318615647_2996241000682006_7276209106184566331_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=ae9488&_nc_ohc=S6ciW_klfy4AX-8DF5S&_nc_ht=scontent-arn2-1.xx&oh=03_AdSfUijV95PJeITB-lQ_RcnYkXtKAUjIQ25A8pmC2MNcpA&oe=63DECA7A",
     },
     {
         name: "Fredrik Torin", 
@@ -31,7 +31,7 @@ export const Standings = [
         name: "Tommy Forslin", 
         score: 735,
         team: "Plopparna", 
-        img: "https://scontent-arn2-2.xx.fbcdn.net/v/t39.30808-6/290050823_10158643272437056_8780626915162579925_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=p3YrkRm4rgQAX-tUh7a&_nc_ht=scontent-arn2-2.xx&oh=00_AfDreaKy8Jy6oyJF_sUJG6chqs0jYzeg-zyVUo4dFExu5w&oe=63B2EB51",
+        img: "https://scontent.xx.fbcdn.net/v/t1.15752-9/318528210_1424218431443256_9040277765076907010_n.jpg?stp=dst-jpg_p206x206&_nc_cat=102&ccb=1-7&_nc_sid=aee45a&_nc_ohc=K8Ro5sroPA0AX8s6kHS&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdSdlMM08x0dvYwfUEUkJ8HVh7ycdwopogpvX4gwgpJGiA&oe=63DEE74F",
     },
     {
         name: "Magnus Olofsson", 
@@ -49,7 +49,7 @@ export const Standings = [
         name: "Mikael Andersson", 
         score: 602,
         team: "Källströms Kabaré", 
-        img: "https://scontent-arn2-1.xx.fbcdn.net/v/t39.30808-6/241453913_10159015062757912_2710311834549830381_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=anoJrhaiMwYAX_icMPj&_nc_ht=scontent-arn2-1.xx&oh=00_AfA5Ozc2RC0GtUKSIVQHmABRxWefbFZTmVRceGHCBySshw&oe=63B320D6",
+        img: "https://www.iggesundsik.se/images/172/3312/_user19059_1.jpg",
     }
 
 
