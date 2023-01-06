@@ -12,9 +12,8 @@
 
 .top-title {
     text-align: center;
-    font-size: 2em;
-    background-color: rgb(164, 221, 221);
-    
+    font-size: 25px;
+    background-color: rgb(53, 119, 83);    
 }
 
 .flex-hej {
@@ -26,13 +25,13 @@
 .fa-trophy {
     color: gold;
     text-shadow: 1px 1px #272634;
-    font-size: 1.5rem;
+    font-size: 20px;
     margin-right: 3px;
 }
 
 .winners {
     list-style-type: none;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 150;
 }
 
@@ -63,7 +62,7 @@
 
 
 .title-top {
-    font-size: 1.5em;
+    font-size: 20px;
     font-weight:bolder;
     color: black;
     text-align: center;
@@ -95,7 +94,7 @@
 
 .semi-title {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .description {
@@ -107,14 +106,10 @@
     display:grid;
     text-align: center;
     font-weight: bold;
-    font-size: 27px;
+    font-size: 17px;
     color: black;
 }
-.title {
-    text-align: center;
-    font-weight: lighter;
-    font-size: 1.5em;
-}
+
 
 @media (max-width: 1100px) {
     .flex-hej  {
@@ -123,6 +118,7 @@
         align-items: center;
         max-width: 1100px;
         padding: 20px;
+      
     }
 
     .year {
