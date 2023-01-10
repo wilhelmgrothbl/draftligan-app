@@ -22,6 +22,14 @@
 }
 
 .board {
+    background-image: url("../../assets/adrian-infernus-GLf7bAwCdYg-unsplash.jpg");
+    /* You must set a specified height */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: 100;
+  
     text-align: center;
     
 }
@@ -46,7 +54,8 @@
 }
 
 .leaderboard {
-    margin-top: 1em;
+    margin-top: 0;
+    padding-top: 2em;
 }
 
 #profile{

@@ -6,17 +6,17 @@ export default function home() {
 
   return (
     <div className='home-container'>
-      <div className='top-title'>
-        <h1>Historia</h1>
-
-      </div>
 
       <div className='info-home'>
+      <div className='top-title'>
+        <p className='title-hist'>Historia</p>
+      </div>
         <div className='top'>
 
-          <hr></hr>
+          
           <div className='flex-hej'>
             <div className='year1'>
+          
               <table className='winners'>
                 <li><p className='title-top'>Draftligan 2021-2022</p></li>
                 <tr><td><i class="fas fa-trophy"></i>  Wille - A Team of Carraghers</td>1903p</tr>
@@ -28,7 +28,9 @@ export default function home() {
                 <tr><td>7. Tompa - Plopparna</td>1376p</tr>
                 <tr><td>8. Forsen - IFK Måsfobi</td>1150p</tr>
 
+
               </table >
+            
             </div>
             <div className='year'>
               <p className='title-top-right'>Årets målvakt</p>
