@@ -5,7 +5,7 @@ export const getTeams = [
         teamname: "BK Slaggberget",
         firstName: "Joel ",
         lastName: "Nordkvist",
-        img: "https://scontent-arn2-1.xx.fbcdn.net/v/t39.30808-6/281528244_5268566136534519_2577984506836793189_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_ohc=83y_mupX1vYAX9wnXC0&_nc_ht=scontent-arn2-1.xx&oh=00_AfD1rAEFmr13z-8qVQNBu5gi3aNsfsD7O_1B3OT7J634XQ&oe=63BD144B",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUBPJBnYA326_lQlDi4tjBaTfbtjhKhy7xFQ&usqp=CAU",
         icon: "fas fa-tshirt",
         lineup:
     
