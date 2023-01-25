@@ -1,5 +1,5 @@
 export const gameweek = {
-    gw: "19"
+    gw: "20"
 }
 
 export const Standings = [
