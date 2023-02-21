@@ -19,13 +19,13 @@ export const Standings = [
         name: "Fredrik Torin", 
         score: 927, 
         team: "Homecoming Queens FC", 
-        img: "http://arkiv.iggesundsik.se/bildarkivet/iik-842.jpg",
+        img: "https://bildix.mmcloud.se/bildix/api/images/2itXx3z19ACs7o_Ne61oqZkIppY.jpeg?fit=crop&w=640",
     },
     {
         name: "Joel Nordqvist", 
         score: 928,
         team: "BK Slaggberget", 
-        img: "http://arkiv.iggesundsik.se/bildarkivet/iik-1334.jpg",
+        img: "https://bildix.mmcloud.se/bildix/api/images/23022d2b-1d8a-48a8-af24-72800bcd324e.jpeg?fit=crop&w=640",
     },
     {
         name: "Tommy Forslin", 
@@ -49,7 +49,7 @@ export const Standings = [
         name: "Mikael Andersson", 
         score: 842,
         team: "Källströms Kabaré", 
-        img: "http://arkiv.iggesundsik.se/bildarkivet/iik-835.jpg",
+        img: "https://pbs.twimg.com/media/FKhTVDCXIAEI6DR?format=jpg&name=large",
     }
 
 
