@@ -22,9 +22,10 @@
 }
 
 .board {
-    background-image: url("../../assets/adrian-infernus-GLf7bAwCdYg-unsplash.jpg");
+    /* background-image: url("../../assets/adrian-infernus-GLf7bAwCdYg-unsplash.jpg"); */
     /* You must set a specified height */
     background-position: center;
+    background: linear-gradient(90deg, rgba(13,57,82,1) 0%, rgba(13,57,82,1) 0%, rgba(69,118,145,1) 73%);
     /* Center the image */
     background-repeat: no-repeat;
     /* Do not repeat the image */
@@ -56,7 +57,7 @@
 .leaderboard {
     margin-top: 0;
     padding-top: 2em;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 #profile{

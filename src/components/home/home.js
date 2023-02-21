@@ -183,7 +183,7 @@ export default function home() {
               <p className='semi-title'>Fredrik Forslin, IFK Måsfobi</p>
               <p className='description'>Visade mindre intresse än Christian Eriksen tills han hotades med uteslutning av ligans president och lyckades tillsammans med osedvanligt flyt och spelare som tidigare knappt fick spela med b-laget som hittade formen under coronapandemin få ihop några hyggliga omgångar. Ändå rättvist tvärsist.</p>
               <p className='title-top-right'>Årets regeltolkare</p>
-              <p className='description'>Wilhelm Groth, A Team of Carraghers</p>
+              <p className='semi-title'>Wilhelm Groth, A Team of Carraghers</p>
               <p className='description'>Manipulerade, smörade, skämtade, hotade, argumenterade och bytte som en vanvettig. Kanske sin egen värsta fiende.</p>
               <p className='title-top-right'>Årets spelare</p>
               <p className='semi-title'>Kevin De Bruyne, FC Premium</p>

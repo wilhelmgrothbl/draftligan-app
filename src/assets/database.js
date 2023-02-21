@@ -1,55 +1,55 @@
 export const gameweek = {
-    gw: "20"
+    gw: "23"
 }
 
 export const Standings = [
     {
         name: "Wilhelm Groth",
-        score: 757,
+        score: 887,
         team: "A team of Carraghers",
         img: "https://media.licdn.com/dms/image/D4D03AQHFf2e4hlKQsw/profile-displayphoto-shrink_800_800/0/1669793398317?e=1678320000&v=beta&t=O_2jkTUmAPlWAK4-lLjWhu4Lm4CX9iUnNa5gCwFT260"
     }, 
     {
         name: "Björn Gabrielsson", 
-        score: 778, 
+        score: 872, 
         team: "FC Premium", 
-        img: "https://scontent-arn2-1.xx.fbcdn.net/v/t1.15752-9/318615647_2996241000682006_7276209106184566331_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=ae9488&_nc_ohc=S6ciW_klfy4AX-8DF5S&_nc_ht=scontent-arn2-1.xx&oh=03_AdSfUijV95PJeITB-lQ_RcnYkXtKAUjIQ25A8pmC2MNcpA&oe=63DECA7A",
+        img: "https://scontent-arn2-1.xx.fbcdn.net/v/t39.30808-6/302487462_2481746258634365_5148902375641916711_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=qlgm9X6m7_oAX9OwBWS&_nc_ht=scontent-arn2-1.xx&oh=00_AfCVdg7etdiRDuD751XUYcAooMkHulpFgwVoKXzftDE-YQ&oe=63FA6F12",
     },
     {
         name: "Fredrik Torin", 
-        score: 818, 
+        score: 927, 
         team: "Homecoming Queens FC", 
-        img: "https://scontent-arn2-1.xx.fbcdn.net/v/t1.6435-9/85014130_10157496938492912_8699274705485430784_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0debeb&_nc_ohc=yCxU0Vk-YBgAX8Oyvqo&_nc_ht=scontent-arn2-1.xx&oh=00_AfAuXRZmKowcT5l0XbWqT_L_2iAkKzW1tvN2UPu9Z07wnw&oe=63D41252",
+        img: "http://arkiv.iggesundsik.se/bildarkivet/iik-842.jpg",
     },
     {
         name: "Joel Nordqvist", 
-        score: 773,
+        score: 928,
         team: "BK Slaggberget", 
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUBPJBnYA326_lQlDi4tjBaTfbtjhKhy7xFQ&usqp=CAU",
+        img: "http://arkiv.iggesundsik.se/bildarkivet/iik-1334.jpg",
     },
     {
         name: "Tommy Forslin", 
-        score: 862,
+        score: 979,
         team: "Plopparna", 
-        img: "https://scontent.xx.fbcdn.net/v/t1.15752-9/318528210_1424218431443256_9040277765076907010_n.jpg?stp=dst-jpg_p206x206&_nc_cat=102&ccb=1-7&_nc_sid=aee45a&_nc_ohc=K8Ro5sroPA0AX8s6kHS&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdSdlMM08x0dvYwfUEUkJ8HVh7ycdwopogpvX4gwgpJGiA&oe=63DEE74F",
+        img: "http://arkiv.iggesundsik.se/bildarkivet/iik-337.jpg",
     },
     {
         name: "Magnus Olofsson", 
-        score: 803,
+        score: 907,
         team: "Mini-Spurs", 
-        img: "https://scontent-arn2-2.xx.fbcdn.net/v/t1.18169-9/935208_10201312750441188_1215249357_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Ei5vpnt6ozIAX9UYQXK&_nc_ht=scontent-arn2-2.xx&oh=00_AfCGQKmO2UvQm_q-XPG-swoiXqMcVB8qTi1xApVXgKP_uA&oe=63D4CBE6",
+        img: "https://media.licdn.com/dms/image/C5603AQETjssOmnH8_w/profile-displayphoto-shrink_800_800/0/1516938199426?e=1682553600&v=beta&t=5agheGFpeQ-vUMhiQjXv_jv6XMfi58Np00B3L99QVmc",
     },
     {
         name: "Lars Berglund", 
-        score: 768,
+        score: 882,
         team: "Villains", 
-        img: "https://scontent-arn2-1.xx.fbcdn.net/v/t1.18169-9/165228_1261453912814_779331_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=cdbe9c&_nc_ohc=vxNRks_-dtUAX_Vlz4V&tn=pImbR-kqUMD591Zb&_nc_ht=scontent-arn2-1.xx&oh=00_AfC3-P-n9np6qzK2Nz3Am0H3XhGVByBlyZhRfr2AMpLhVA&oe=63D4D256",
+        img: "https://scontent-arn2-1.xx.fbcdn.net/v/t1.18169-9/225780_1934597975094_4856782_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=de6eea&_nc_ohc=Qm7z4xauM5UAX9DUOo7&_nc_ht=scontent-arn2-1.xx&oh=00_AfBuES7Yam9CcemCgQ99gev8QBqI24VB60KEJkhan4PjNQ&oe=641C1C23",
     },
     {
         name: "Mikael Andersson", 
-        score: 740,
+        score: 842,
         team: "Källströms Kabaré", 
-        img: "https://www.iggesundsik.se/images/172/3312/_user19059_1.jpg",
+        img: "http://arkiv.iggesundsik.se/bildarkivet/iik-835.jpg",
     }
 
 

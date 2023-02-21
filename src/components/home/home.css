@@ -1,5 +1,7 @@
 .home-container {
-    background-image: url("../../assets/adrian-infernus-GLf7bAwCdYg-unsplash.jpg");
+
+    background: rgb(13,57,82);
+background: linear-gradient(90deg, rgba(13,57,82,1) 0%, rgba(13,57,82,1) 0%, rgba(69,118,145,1) 73%);
     /* You must set a specified height */
     background-position: center;
     /* Center the image */
@@ -16,9 +18,7 @@
 .top-title {
     text-align: center;
     font-size: 50px;  
-    color: rgba(255, 255, 255, 0.9);   
-    background-color: rgba(251,251,251,0.1);
- 
+    color: rgba(255, 255, 255, 0.9);    
 }
 
 .flex-hej {
@@ -91,19 +91,19 @@
     height: 40%;
     margin-top: 20px;
     font-size: 20px;  
-    background-color: rgba(253, 253, 253, 0.2);
+    background-color: rgba(250, 250, 250, 0.2);
 
 }
 
 
 .semi-title {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
 }
 
 .description {
     font-style: italic;
-    font-size: 13px;
+    font-size: 15px;
    
 }
 
