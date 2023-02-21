@@ -31,7 +31,7 @@ export const Standings = [
         name: "Tommy Forslin", 
         score: 979,
         team: "Plopparna", 
-        img: "http://arkiv.iggesundsik.se/bildarkivet/iik-337.jpg",
+        img: "https://scontent-arn2-2.xx.fbcdn.net/v/t1.6435-9/118623453_1661835510651030_76141295894029230_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=Xe8yKx47BrwAX90DD42&_nc_ht=scontent-arn2-2.xx&oh=00_AfBAqOFSPKj8nbwkHLOgY_kfaDQRQJSwsRJH2CuzFkzw0Q&oe=641C2D6D",
     },
     {
         name: "Magnus Olofsson", 
