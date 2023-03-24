@@ -28,7 +28,7 @@ function Item(data){
                             </div>                
                         </div>
                         <div className="item">
-                            <span>{value.score}</span>
+                            <span >{value.score}</span>
                         </div>
                     </div>
                     )

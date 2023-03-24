@@ -1,8 +1,8 @@
 import React from 'react'
-import './home.css'
+import './history.css'
 
 
-export default function home() {
+export default function history() {
 
   return (
     <div className='home-container'>
