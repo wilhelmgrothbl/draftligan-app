@@ -1,53 +1,53 @@
 export const gameweek = {
-    gw: "25"
+    gw: "27"
 }
 
 export const Standings = [
     {
         name: "Wilhelm Groth",
-        score: 1047,
+        score: 1123,
         team: "A team of Carraghers",
         img: "././wille.jpg"
     }, 
     {
         name: "Björn Gabrielsson", 
-        score: 950, 
+        score: 1018, 
         team: "FC Premium", 
         img: "././bjorn.jpg"
     },
     {
         name: "Fredrik Torin", 
-        score: 999, 
+        score: 1083, 
         team: "Homecoming Queens FC", 
         img: "././forsen.jpg",
     },
     {
         name: "Joel Nordqvist", 
-        score: 1027,
+        score: 1116,
         team: "BK Slaggberget", 
         img: "././joel.jpg",
     },
     {
         name: "Tommy Forslin", 
-        score: 1100,
+        score: 1177,
         team: "Plopparna", 
         img: "././tommy.jpg",
     },
     {
         name: "Magnus Olofsson", 
-        score: 940,
+        score: 1025,
         team: "Mini-Spurs", 
         img: "././lofsen.jpg",
     },
     {
         name: "Lars Berglund", 
-        score: 962,
+        score: 1058,
         team: "Villains", 
         img: "././lasse.jpg",
     },
     {
         name: "Mikael Andersson", 
-        score: 921,
+        score: 1015,
         team: "Källströms Kabaré", 
         img: "././micke.jpg",
     }
