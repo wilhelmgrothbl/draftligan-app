@@ -12,7 +12,7 @@ handleClick = () => {
     render() {
         return (
             <nav className="NavbarItems">
-                <h1 className="navbar-logo">Draftligan <i className="far fa-futbol"></i></h1>
+                <h1 className="navbar-logo">Draftligan  </h1><img className="navbar-logo-pic" src="./././efterkloka.png" alt="här var det en ko" />
                 <div className="menu-icon" onClick={this.handleClick}> 
                         <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>

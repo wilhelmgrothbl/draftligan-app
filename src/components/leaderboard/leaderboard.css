@@ -35,6 +35,12 @@
     
 }
 
+.navbar-logo-pic-board {
+    font-size: small;
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
 
 
 .info-profile {

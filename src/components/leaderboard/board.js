@@ -10,8 +10,10 @@ export default function Leaderboard() {
 
   return (
     <div className="board">
+        
         <h1 className="leaderboard">Totalställning efter omgång {gameweek.gw}</h1>
         <Profiles Standings={between(Standings, period)}></Profiles>
+        <img className="navbar-logo-pic-board" src="./././efterkloka.png" alt="här var det en ko" />
     </div>
   )
 }

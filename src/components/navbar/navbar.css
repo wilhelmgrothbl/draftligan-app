@@ -15,6 +15,13 @@
     cursor: pointer;
 }
 
+.navbar-logo-pic {
+    font-size: small;
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
 .fa-react {
     margin-left: 0.5rem;
     font-size: 1.6rem;
