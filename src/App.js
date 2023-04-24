@@ -1,7 +1,7 @@
 import History from './components/history/history'
 import Board from './components/leaderboard/board'
 import Navbar from './components/navbar/navbar'
-import Lineup from './components/lineups/lineup';
+import DeEfterkloka from './components/de-efterkloka/deEfterkloka';
 import { Route, Routes } from 'react-router-dom'
 import React from 'react';
 

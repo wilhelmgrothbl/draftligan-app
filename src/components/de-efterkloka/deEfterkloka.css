@@ -1,0 +1,179 @@
+.container-flex {
+
+    background-image: url(../.././assets/PLPLPL.jpg
+);
+    background-position: center;
+    /* Center the image */
+    background-repeat: repeat;
+    /* Do not repeat the image */
+    background-size: contain;
+    /* Resize the background image to cover the entire container */
+    height: 100%;
+    max-width: 100%Q;
+
+}
+
+.row-test {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+.card-01 {
+    background-image: url("https://cdn.fantasyfootballscout.co.uk/wp-content/plugins/ffs-team-news-plugin/images/team-pitch.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    max-width: 600px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 13px;
+    margin-bottom: 5em;
+    float: left;
+    clear: both;
+    opacity: 0.97;
+}
+
+.lineup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7.5rem;
+    padding: 3px;
+    justify-content: space-between;
+    clear: both;
+}
+
+.gk {
+    text-align: center;
+    color: white;
+    margin-bottom: 8vh;
+}
+
+.df {
+    color: white;
+    margin-top: 4em;
+    text-align: center;
+    white-space: pre;
+}
+
+
+.df2 {
+    color: white;
+    margin-top: 1em;
+    text-align: center;
+    white-space: pre;
+}
+
+.mf {
+    color: white;
+    margin-top: 10vh;
+    text-align: center;
+    white-space: pre;
+}
+
+.mf2 {
+    color: white;
+    margin-bottom: 0.3em;
+    margin-top: 0.1em;
+    white-space: pre;
+    text-align: center;
+}
+
+.mf3 {
+    color: white;  
+    white-space: pre;
+    text-align: center;
+}
+
+.st {
+    color: white;
+    margin-top: 7em;
+    white-space: pre;
+    text-align: center;
+}
+.st1 {
+    color: white;
+    white-space: pre;
+    text-align: center;
+}
+
+
+
+.bench {
+    background-color: rgb(255, 255, 255);
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    margin-top: 5em;
+    padding: 2px;
+    padding-bottom: 3em;
+    width: 100%;
+    opacity: 0.9;
+
+}
+
+.bench-title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 1em;
+}
+
+.profile-team {
+    margin-top: 0.7em;
+    border-radius: 20px;
+    width: 20px;
+    clear: left;
+
+}
+
+
+.img {
+    padding: 10px 10px 10px 0;
+    margin-left: 0;
+    width: 120px;
+    height: 120px;
+    border-radius: 20%;
+
+}
+
+.check {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    padding-left: 10px;
+}
+
+.team-name {
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+}
+
+.team-coach {
+    font-size: 15px;
+}
+
+
+@media screen and (max-width: 960px) {
+
+    .container-flex {
+        background-image: url(../.././assets/PLPLPL.jpg);
+        background-position: center;
+        /* Center the image */
+        background-repeat: repeat;
+        /* Do not repeat the image */
+        background-size: contain;
+        width: 1200px;
+    
+     
+        max-width: calc(100% - 20px);
+        padding: 10px;
+    }
+
+    .card-01 {
+        background-size: 100%Q;
+    }
+}
