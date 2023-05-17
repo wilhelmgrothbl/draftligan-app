@@ -22,7 +22,7 @@ export const Standings = [
         img: "././forsen.jpg",
     },
     {
-        name: "Joel Nordqvist", 
+        name: "Joel Nordkvist", 
         score: 1401,
         team: "BK Slaggberget", 
         img: "././joel.jpg",
