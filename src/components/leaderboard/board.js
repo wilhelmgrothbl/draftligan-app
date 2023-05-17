@@ -9,12 +9,13 @@ export default function Leaderboard() {
     const [period] = useState(0);
 
   return (
-    <div className="board">
-        
-        <h1 className="leaderboard">Totalställning efter omgång {gameweek.gw}</h1>
-        <Profiles Standings={between(Standings, period)}></Profiles>
-        <img className="navbar-logo-pic-board" src="./././efterkloka.png" alt="här var det en ko" />
-    </div>
+<div className="bg-gradient-to-r from-indigo-900 to-red-500 flex flex-col justify-center items-center">
+  <h1 className="text-center text-white text-3xl p-10">Totalställning efter omgång {gameweek.gw}</h1>
+  <Profiles Standings={between(Standings, period)}></Profiles>
+  <div className="flex flex-grid">
+    <img className="h-52" src="./././efterkloka.png" alt="här var det en ko" />
+  </div>
+</div>
   )
 }
 

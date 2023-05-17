@@ -1,0 +1,109 @@
+{
+    "2021-2022": {
+      "table": [
+        { "titleTop": "Draftligan 2021-2022" },
+        { "label": "Wille - A Team of Carraghers", "points": 1903 },
+        { "label": "Lofsen - Mini-Spurs", "points": 1734 },
+        { "label": " Björn - FC Premium", "points": 1532 },
+        { "label": " Lars - Villains", "points": 1525 },
+        { "label": "Micke - Källströms Kabaré", "points": 1521 },
+        { "label": "Joel - BK Slaggberget", "points": 1498 },
+        { "label": "Tompa - Plopparna", "points": 1376 },
+        { "label": "Forsen - IFK Måsfobi", "points": 1150 }
+      ],
+      "itemsReward": [
+        { "labelReward": "Årets målvakt", "player": "Alisson Becker, Källströms Kabaré", "description": "Flest hållna nollor och poängbäst bland målvakterna." },
+        { "labelReward": "Årets mittfältare", "player": "Hueng-Min Son, A Team of Carraghers", "description": "Inte poängbäst bland alla 'mittfältare' men han spelar åtminstone det. Levererade när både hans lag behövde honom som bäst. " },
+        { "labelReward": "Årets anfallare", "player": "Harry Kane, Mini-Spurs", "description": "Nästan lite tyst säsong för att vara Kane, men fortfarande poängbästa anfallare." },
+        { "labelReward": "Årets fynd", "player": "Pablo Fornals, Villains", "description": "Vald i 13e rundan och samlade ihop respektabla 117 poäng." },
+        { "labelReward": "Årets flopp", "player": "Pierre-Emerick Aubameyang, FC Premium", "description": "Motivering överflödig." },
+        { "labelReward": "Årets anglosaxiska övertro", "player": "Joel Nordkvist, BK Slaggberget", "description": "Valde Grealish och Sancho i första och andra rundan. Samlade gemensamnt ihop en poäng fler än Alisson Becker." },
+        { "labelReward": "Årets fynd (2)", "player": "Joâo Cancelo, A Team of Carraghers", "description": "Valdes i tionde rundan och samlade ihop näst flest poäng bland försvararna." },
+        { "labelReward": "Årets FPL-spelare", "player": "Mohamed Salah,  FC Premium", "description": "Att ha flest poäng och vinna både mål- och assistligan går inte att ignorera. " },
+        { "labelReward": "Årets regeltolkare", "player": "Wilhelm Groth, AToC", "description": "Råkade minnas fel och göra missar vid lägliga tillfällen. Men hade stenkoll när någon annan hade en fråga." },
+        { "labelReward": "Årets minst förbättrade", "player":"Fredrik Torin, IFK Måsfobi", "description": "Snittade ett poäng lägre per omgång när han tvingades lämna in startelvor. " },
+        { "labelReward": "Årets manager", "player": "Wilhelm Groth, AToC", "description": "Ökade på sin segermarginal från fjolåret, var aldrig riktigt hotad. Och har dessutom sannolikt lyckats addera en regel inför kommande säsong." },
+        { "labelReward": "Årets mygelspelare", "player": "Mohammed Salah, FC Premium", "description": "Världens minst mittfältiga mittfältare. Råkar ibland vara på egen planhalva." }
+      ]
+    },
+    "2020-2021": {
+      "table": [
+        { "titleTop": "Draftligan 2020-2021" },
+        { "label": "1. Wille - A Team of Carraghers", "points": 1786 },
+        { "label": "2. Micke - Källströms Kabaré", "points": 1681 },
+        { "label": "3. Lasse - Villains", "points": 1679 },
+        { "label": "4. Joel - BK Slaggberget", "points": 1648 },
+        { "label": "5. Lofsen  Mini-Spurs", "points": 1465 },
+        { "label": "6. Tompa - Plopparna", "points": 1418 },
+        { "label": "7. Björn - FC Premium", "points": 1275 },
+        { "label": "8. Forsen - IFK Måsfobi", "points": 1123 }
+      ],
+      "itemsReward": [
+        { "labelReward": "Årets målvakt", "player": "Emiliano Martinez, Villains", "description": "Stor anledning till både Villains och Villas fina säsonger. Poängbäst bland målvakterna." },
+        { "labelReward": "Årets försvarare", "player": "Rúben Dias, Villans", "description": "Inte poängbäst men bäst. Tog sig in på topp 6 som mittback och efter att ha anslutit sig inför omgång 4." },
+        { "labelReward": "Årets mittfältare", "player": "Bruno Fernandes, AToC", "description": "Välförtjänt dubbad Penandes. Frågan är hur mycket den som valde TAA före ångrar det." },
+        { "labelReward": "Årets anfallare", "player": "Harry Kane, Mini-Spurs", "description": "Vinnare av både mål och assistligan, sensationellt med tanke på vilka han spelar för. " },
+        { "labelReward": "Årets fynd", "player": "Mason Mount, Villains", "description": "Vald efter Enda Stevens, bara en sådan sak... Hade varit Jack Harrison om hans tränare trott mer på honom." },
+        { "labelReward": "Årets flopp", "player": "Donny Van De Beek", "description": "Kaxigt dubbad som årets fynd inför ligans start av tränaren Björn Gabrielsson, även tidigt dumpad och samladede ihop totalt 32 poäng." },
+        { "labelReward": "Årets mygelspelare", "player": "Stuart Dallas", "description": "Valde Grealish och Sancho i första och andra rundan. Samlade gemensamt ihop en poäng fler än Alisson Becker." },
+        { "labelReward": "Årets va, har han inte fått sparken?", "player": "Fredrik Forslin, IFK Måsfobi", "description": "Visade mindre intresse än Christian Eriksen tills han hotades med uteslutning av ligans president och lyckades tillsammans med osedvanligt flyt och spelare som tidigare knappt fick spela med b-laget som hittade formen under coronapandemin få ihop några hyggliga omgångar. Ändå rättvist tvärsist." },
+        { "labelReward": "Årets förbättringspotential", "player": "Fredrik Forslin, IFK Måsfobi", "description": "Kanske den mest konsekventa. spikrak formkurva i form av slutplacering. Ska bli spännande att se om han kan slå sig egen total när han tvingats lämna in startelvor." },
+        { "labelReward": "Årets kohandlare", "player":"Wilhelm Groth, AToC", "description": "Regeltolkaren nummer 1. Lyckades med konststycket att byta bort alla sina spelare förutom en. Richarlison slutade nog lära känna sina nya lagkamrater efter ett tag." },
+        { "labelReward": "Årets FPL-spelare", "player": "Bruno Fernadndes, AToC", "description": "Poängbäst i ligan och smått genial. Fick avsluta säsongen i rätt färger och betalade tillbaka genom att vila." },
+        { "labelReward": "Årets manager", "player": "Wilhelm Groth, AToC", "description": "Visade att lojalitet är överskattat, största segermarginalen i ligans korta historia." }
+
+      ]
+    },
+    "2019-2020": {
+      "table": [
+        { "titleTop": "Draftligan 2019-2020" },
+        { "label": " Björn FC Premium", "points": 1566 },
+        { "label": "Tompa - Plopparna", "points": 1542 },
+        { "label": "Wille - A Team of Carraghers", "points": 1526 },
+        { "label": " Micke - Fyrklöverns FK", "points": 1477 },
+        { "label": " Lofsen - Mini-Spurs", "points": 1469 },
+        { "label": "Joel - BK Slaggberget", "points": 1463 },
+        { "label": "Lars - Villains ", "points": 1259 },
+        { "label": "Forsen - IFK Måsfobi", "points": 1143 }
+      ],
+      "itemsReward": [
+        { "labelReward": "Årets målvakt", "player": "Nick Pope, BK Slaggberget", "description": "Vald sist av alla spelare och hade förutom flest poäng av alla målvakter 15 hållna nollor." },
+        { "labelReward": "Årets försvarare", "player": "Trent Alexander-Arnold", "description": "Förhandsfavorit som höll för trycket, 14 nollor, 15 assist och 4 mål." },
+        { "labelReward": "Årets mittfältare", "player": "Kevin De Bruyne", "description": "13 mål och 23 assist, vilket är vinst av Premier leagues poängliga." },
+        { "labelReward": "Årets anfallare", "player": "Jamie Vardy, Plopparna", "description": "23 mål och ensam vinnare av skytteligan före mer namnkunniga spelare." },
+        { "labelReward": "Årets fynd", "player": "Danny Ings, Plopparna", "description": "Inte ens vald i draften men springer ändå in 22 bollar i nät samtidigt som hans medspelare gjorde sitt bästa för att åka ur." },
+        { "labelReward": "Årets flopp", "player": "Christian Eriksen, Fyrklöverns FK", "description": "Valdes tidigt men visade sig helt ointresserad av att spela och sattes på ett plan till Italien." },
+        { "labelReward": "Årets upp som en sol, ner som en pannkaka", "player": "Teemu Pukki, FC Premium", "description": "Gav sin manager svår hybris i säsongsinledningen innan även han själv också kom ihåg att han var finländare och dålig." },
+        { "labelReward": "Årets va, har han inte fått sparken?", "player": "Fredrik Forslin, IFK Måsfobi", "description": "Visade mindre intresse än Christian Eriksen tills han hotades med uteslutning av ligans president och lyckades tillsammans med osedvanligt flyt och spelare som tidigare knappt fick spela med b-laget som hittade formen under coronapandemin få ihop några hyggliga omgångar. Ändå rättvist tvärsist." },
+        { "labelReward": "Årets regeltolkare", "player": "Wilhelm Groth, A Team of Carraghers", "description": "Manipulerade, smörade, skämtade, hotade, argumenterade och bytte som en vanvettig. Kanske sin egen värsta fiende." },
+        { "labelReward": "Årets spelare", "player":"Kevin De Bruyne, FC Premium", "description": "R>Fick alla som heter Jordan Hendersson att se ut som en dålig variant av en trasig krona. Målskytt, framspelare, pådrivare och allmänt fotbollsgeni. " }
+      ]
+    },
+    "2018-2019": {
+      "table": [
+        { "titleTop": "Draftligan 2018-2019" },
+        { "label": "Micke - Fyrklöverns FK", "points": 1596 },
+        { "label": "Joel - BK Slaggberget", "points": 1530 },
+        { "label": "Björn - FC Premium", "points": 1499 },
+        { "label": "Tompa - Plopparna", "points": 1454 },
+        { "label": "Lofsen - Mini-Spurs", "points": 1395 },
+        { "label": "Wille - A Team of Carraghers", "points": 1386 },
+        { "label": "Lars - Villains ", "points": 1384 },
+        { "label": "Forsen - IFK Måsfobi", "points": 1337 }
+      ]
+    },
+    "2017-2018": {
+      "table": [
+        { "titleTop": "Draftligan 2017-2018" },
+        { "label": "Wille - Ziemlich Gut", "points": 1226 },
+        { "label": "Joel - BK Slaggberget", "points": 1175 },
+        { "label": "Lofsen - Mini-Spurs", "points": 1047 },
+        { "label": "Lars - Villains", "points": 1032 },
+        { "label": "Björn - FC Premium", "points": 975 },
+        { "label": "Forsen - FK Måsfobi ", "points": 942 },
+        { "label": "Tompa - Plopparna", "points": 927 },
+        { "label": "Micke - Ett kraftigt jävla gäng", "points": 844 },
+        { "label": "Niklas - Bortglömda Brasilien", "points": 734 }
+      ]
+    }
+  }

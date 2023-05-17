@@ -1,4 +1,4 @@
-import History from './components/history/history'
+import HistoryNew from './components/historynew/historynew'
 import Board from './components/leaderboard/board'
 import Navbar from './components/navbar/navbar'
 import Lineup from './components/lineups/lineup';
@@ -12,8 +12,8 @@ function App() {
     <React.Fragment>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Board />} />
-        <Route path="/history" element={<History />} />
+        <Route path="/" element={<HistoryNew />} />
+        <Route path="/historynew" element={<HistoryNew />} />
         <Route path="/board" element={<Board />} />
       </Routes>
 

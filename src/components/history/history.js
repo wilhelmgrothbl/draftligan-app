@@ -27,8 +27,6 @@ export default function history() {
                 <tr><td>6. Joel - BK Slaggberget</td>1498p</tr>
                 <tr><td>7. Tompa - Plopparna</td>1376p</tr>
                 <tr><td>8. Forsen - IFK Måsfobi</td>1150p</tr>
-
-
               </table >
             
             </div>
