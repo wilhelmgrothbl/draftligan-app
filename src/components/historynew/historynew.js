@@ -33,7 +33,7 @@ export default function HistoryNew() {
               <div className="text-lg md:text-2xl">{winner.team}</div>
               <div className="text-sm">{winner.name}</div>
               <div className="text-sm text-gray-900">
-                Poäng {winner.points}
+                Poäng: {winner.points}
               </div>
             </div>
             <div className="flex items-center md:ml-auto mt-3 md:mt-0 md:w-2/4">
