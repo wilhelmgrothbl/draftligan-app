@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Modal from "./modal.js";
 import winnerData from "./winnerData.json";
 import historyData from "./historyData.json";
-import "tailwindcss/tailwind.css";
+
 import { faWindowMaximize } from "@fortawesome/free-regular-svg-icons";
 
 export default function HistoryNew() {

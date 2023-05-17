@@ -9,10 +9,10 @@ export const MenuItems = [
         url: 'board',
         cName: 'nav-links'
     },
-    // {
-    //     title: 'Lineup',
-    //     url: 'lineup',
-    //     cName: 'nav-links'
-    // },
+     {
+         title: 'De Efterkloka',
+         url: 'home',
+         cName: 'nav-links'
+     },
    
 ]
