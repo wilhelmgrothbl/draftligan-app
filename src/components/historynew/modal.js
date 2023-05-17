@@ -63,10 +63,10 @@ export default function Modal({ onCloseModal, data }) {
           </div>
           <div className="flex justify-center"> {/* Centrering */}
             <button
-              className="w-1/3 px-4 py-2 bg-indigo-900 text-white rounded hover:bg-gradient-to-r hover:from-[#ff2882] hover:to-[#37003c] transition-colors duration-300"
+              className="mb-16 w-1/3 px-4 py-2 bg-indigo-900 text-white rounded hover:bg-gradient-to-r hover:from-[#ff2882] hover:to-[#37003c] transition-colors duration-300"
               onClick={onCloseModal}
             >
-              Close
+              Stäng
             </button>
           </div>
         </div>
