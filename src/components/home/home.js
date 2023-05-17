@@ -10,7 +10,7 @@ const people = [
     linkedinUrl: "#",
   },
   {
-    name: "Joel Nordqvist",
+    name: "Joel Nordkvist",
     role: "Draftgeneral",
     imageUrl: "./././joel.jpg",
     twitterUrl: "#",
