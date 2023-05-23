@@ -25,7 +25,7 @@ const people = [
   },
   {
     name: 'Fredrik "Forsen" Torin',
-    role: "Fredrik Forsen Forslin, numera Torin, mannen som inte hatar att knycka och som stolt kan kalla sig supporter till nästan alla lag.",
+    role: "Forsen, mannen som inte hatar att knycka och som stolt kan kalla sig supporter till nästan alla lag.",
     imageUrl: "./././forsen.jpg",
     twitterUrl: "#",
     linkedinUrl: "#",
