@@ -1,63 +1,74 @@
 [
-    {
-      "id": 1,
-      "name": "Wilhelm Groth",
-      "team": "A Team of Carraghers",
-      "year": "2021-2022",
-      "points": 1903,
-      "goals": "",
-      "assists": "",
-      "funFact": "Mohammed Salah -  FC Premium",
-      "funFact1": "Alisson Becker - Källströms Kabaré",
-      "image": "././wille.jpg"
-    },
-    {
-      "id": 2,
-      "name": "Wilhelm Groth",
-      "team": "A Team of Carraghers",
-      "year": "2020-2021",
-      "points": 1786,
-      "goals": 30,
-      "assists": 18,
-      "funFact": "Bruno Fernandes - AToC",
-      "funFact1": "Emiliano Martinez, Villains",
-      "image": "path/to/image2.jpg"
-    },
-    {
-      "id": 3,
-      "name": "Björn Gabrielsson",
-      "team": "FC Premium",
-      "year": "2019-2020",
-      "points": 1566,
-      "goals": 28,
-      "assists": 15,
-      "funFact": "Kevin De Bruyne - FC Premium",
-      "funFact1": "Nick Pope, BK Slaggberget",
-      "image": "path/to/image3.jpg"
-    },
-    {
-      "id": 4,
-      "name": "Mikael Andersson",
-      "team": "Fyrklöverns FK",
-      "year": "2018-2019",
-      "points": 1596,
-      "goals": 25,
-      "assists": 22,
-      "funFact": "Pierre-Emerick Aubameyang", 
-      "funFact1": "Alisson",
-      "image": "path/to/image4.jpg"
-    },
-    {
-      "id": 5,
-      "name": "Wilhelm Groth",
-      "team": "Ziemlich Gut",
-      "year": "2017-2018",
-      "points": 1226,
-      "goals": 24,
-      "assists": 19,
-      "funFact": "Mohamned Salah",
-      "funFact1": "David de Gea",
-      "image": "path/to/image5.jpg"
-    }   
-  ]
-  
+  {
+    "id": 6,
+    "name": "Tommy Forslin",
+    "team": "Plopparna",
+    "year": "2022-2023",
+    "points": 1645,
+    "goals": 24,
+    "assists": 19,
+    "funFact": "Haaland - Homecoming Queens FC",
+    "funFact1": "David de Gea - Homecoming Queens FC ",
+    "image": "path/to/image5.jpg"
+  },
+  {
+    "id": 1,
+    "name": "Wilhelm Groth",
+    "team": "A Team of Carraghers",
+    "year": "2021-2022",
+    "points": 1903,
+    "goals": "",
+    "assists": "",
+    "funFact": "Mohammed Salah -  FC Premium",
+    "funFact1": "Alisson Becker - Källströms Kabaré",
+    "image": "././wille.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Wilhelm Groth",
+    "team": "A Team of Carraghers",
+    "year": "2020-2021",
+    "points": 1786,
+    "goals": 30,
+    "assists": 18,
+    "funFact": "Bruno Fernandes - AToC",
+    "funFact1": "Emiliano Martinez - Villains",
+    "image": "path/to/image2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Björn Gabrielsson",
+    "team": "FC Premium",
+    "year": "2019-2020",
+    "points": 1566,
+    "goals": 28,
+    "assists": 15,
+    "funFact": "Kevin De Bruyne - FC Premium",
+    "funFact1": "Nick Pope - BK Slaggberget",
+    "image": "path/to/image3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Mikael Andersson",
+    "team": "Fyrklöverns FK",
+    "year": "2018-2019",
+    "points": 1596,
+    "goals": 25,
+    "assists": 22,
+    "funFact": "Pierre-Emerick Aubameyang",
+    "funFact1": "Alisson",
+    "image": "path/to/image4.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Wilhelm Groth",
+    "team": "Ziemlich Gut",
+    "year": "2017-2018",
+    "points": 1226,
+    "goals": 24,
+    "assists": 19,
+    "funFact": "Mohamned Salah",
+    "funFact1": "David de Gea",
+    "image": "path/to/image5.jpg"
+  }
+]

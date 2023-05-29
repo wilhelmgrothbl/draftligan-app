@@ -1,4 +1,30 @@
 {
+  "2022-2023": {
+    "table": [
+      { "titleTop": "Draftligan 2022-2023" },
+      { "label": "Tompa - Plopparna", "points": 1645 },
+      { "label": " Wille - A Team of Carraghers", "points": 1613 },
+      { "label": "Joel - BK Slaggberget", "points": 1528 },
+      { "label": "Lars - Villains", "points": 1497 },
+      { "label": "Magnus - Mini-Spurs", "points": 1477 },
+      { "label": "Forsen - IFK Måsfobi", "points": 1451 },
+      { "label": "Mikael  -  Källströms kabaré", "points": 1407 },
+      { "label": "Björn -FC Premium", "points": 1395 }
+    ],
+    "itemsReward": [
+      { "labelReward": "Årets målvakt", "player": "David Raya, Mini-Spurs.", "description": "Poängbäst, tolv hållna nollor, misstagsimmun och de som är framför honom är ju kanske inte allt för imponerande. Starkt!" },
+      { "labelReward": "Årets försvarare", "player": "Kieran Trippier, FC Premium.", "description": "Vräkte in poäng i ett annars svagt presterande lag (i draften alltså) var med och höll 16 nollor och hann med nio assist och en pyts. " },
+      { "labelReward": "Årets mittfältare", "player": "Martin Ødegaard, Plopparna.", "description": "15 mål, 8 assist pådrivare och nyckeln till att Gunners såg ut att ta titeln, kanske hjälpte han till att bärga en annan?" },
+      { "labelReward": "Årets anfallare", "player": "Erling Haaland, Homecoming Queens", "description": "36 mål på 35 spelade matcher. Smått sensationellt och den enskilt största orsaken till sin managers nya rekordplacering." },
+      { "labelReward": "Årets flopp", "player": "Marquinhos, Homecoming Queens.", "description": "Vald i andra rundan, osäkert om han spelade alls men kvar i ligan är han då inte." },
+      { "labelReward": "Årets fynd", "player": "Marcus Rashford, BK Slaggberget.", "description": "Vald i runda sju och visade alla tvivlare fel, trea i poäng bland mittfältarna." },
+      { "labelReward": "Årets 'vem valde du sa du?'", "player": "Fredrik Torin för Carney Chukumuweka.", "description": "Ingen som inte höll på Aston Villa innan han lämnade för Chelsea visste att han fanns." },
+      { "labelReward": "Årets mygelspelare", "player": "Mohamed Salah, A Team of Carraghers.", "description": "'HAN ÄR ANFALLARE HAR JAG SAGT'" },
+      { "labelReward": "Årets mest fel-hypade:", "player": "Fábio Vieira, FC Premium", "description": "'kommer bli vass och jag kan behålla honom nästa säsong, då blir toksuccé!'     Hur gick det med det?" },
+      { "labelReward": "Årets fynd (2)", "player":"William Saliba, Homecoming Queens.", "description": "Vald i 14e rundan, hade Gunners tagit titeln om han inte gått sönder?" },
+      { "labelReward": "Årets manager", "player": "Tommy Forslin, Plopparna.", "description": "Satte en utmärkt grund i draften och gjorde små ändringar längs vägen utan att rucka på kärnan. Visar att bra saker händer den som klagar tillräckligt." }
+    ]
+  },
     "2021-2022": {
       "table": [
         { "titleTop": "Draftligan 2021-2022" },
