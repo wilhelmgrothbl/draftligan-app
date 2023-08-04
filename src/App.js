@@ -4,11 +4,14 @@ import Navbar from './components/navbar/navbar'
 import Home from './components/home/home';
 import Merch from './components/merch/merch';
 import { Route, Routes } from 'react-router-dom'
-import React from 'react';
-
+import React, { useEffect } from 'react';
+import { initHotjar } from './hotjar';
 
 
 function App() {
+  useEffect(() => {
+    initHotjar();
+  }, []);
   return (
     <React.Fragment>
       <Navbar />
