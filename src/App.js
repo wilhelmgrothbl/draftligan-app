@@ -6,6 +6,8 @@ import Merch from './components/merch/merch';
 import { Route, Routes } from 'react-router-dom'
 import React, { useEffect } from 'react';
 import { initHotjar } from './hotjar';
+import EditTeamPage from './components/edit-team-page/edit-team-page';
+
 
 
 function App() {
@@ -21,6 +23,7 @@ function App() {
         <Route path="/board" element={<Board />} />
         <Route path="/home" element={<Home />} />
         <Route path="/merch" element={<Merch />} />
+        <Route path="/edit-team" element={<EditTeamPage />} />
       </Routes>
 
     </React.Fragment>
