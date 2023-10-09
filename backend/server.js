@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
@@ -7,9 +8,9 @@ const q = faunadb.query;
 const fetch = require("node-fetch");
 const app = express();
 const client = new faunadb.Client({
-    secret: process.env.FAUNA_SECRET_KEY,
-  });
-  
+  secret: process.env.FAUNADB_SECRET_KEY,
+});
+
 
 // Middleware
 app.use(cors());
@@ -85,7 +86,7 @@ app.get("/api/players", async (req, res) => {
   try {
     const players = await client.query(
       q.Map(
-        q.Paginate(q.Match(q.Index("all_players"))),
+        q.Paginate(q.Match(q.Index("all_players")), { size: 1000 }),
         q.Lambda("X", q.Get(q.Var("X")))
       )
     );
