@@ -1,151 +1,241 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React, { useState, useEffect } from 'react';
 
 const EditTeamPage = () => {
-  const [teams, setTeams] = useState([]);
-  const [allPlayers, setAllPlayers] = useState([]);
-  const [selectedPlayers, setSelectedPlayers] = useState({});
-  const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+  const [players, setPlayers] = useState([]);
+  const [managers, setManagers] = useState([]);
+  const [startingEleven, setStartingEleven] = useState(Array(11).fill(''));
+  const [subs, setSubs] = useState(Array(4).fill(''));
+  const [selectedTeam, setSelectedTeam] = useState('');
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState('');
 
+  useEffect(() => {
+    // Funktion för att hämta spelare och managers
+    const fetchData = async () => {
+      try {
+        const playersUrl = 'http://localhost:5000/api/fpl/players';
+        const teamsUrl = 'http://localhost:5000/api/teams';
+        const playersResponse = await fetch(playersUrl);
+        const teamsResponse = await fetch(teamsUrl);
+        const playersData = await playersResponse.json();
+        const teamsData = await teamsResponse.json();
 
-  const fetchTeamsWithPlayers = () => {
-    axios
-      .get("http://localhost:5000/api/teams")
-      .then(async (response) => {
-        const teamsWithPlayers = await Promise.all(
-          response.data.map(async (team) => {
-            const playersResponse = await axios.get(
-              `http://localhost:5000/api/teams/players/${team.teamName}`
-            );
-            return { ...team, players: playersResponse.data };
-          })
-        );
-        setTeams(teamsWithPlayers);
-      })
-      .catch((error) => {
-        console.error("Error fetching teams:", error);
-      });
-  };
-  
-  useEffect(() => {
-    fetchTeamsWithPlayers();
-  }, []);
-  
-  useEffect(() => {
-    axios
-      .get("http://localhost:5000/api/players")
-      .then((response) => {
-        setAllPlayers(response.data);
-      })
-      .catch((error) => {
-        console.error("Error fetching players:", error);
-      });
+        setPlayers(playersData.map(player => ({
+          id: player.id,
+          name: `${player.first_name} ${player.second_name}`,
+          elementType: player.element_type, // Antag att detta är rätt fält från API
+          totalPoints: player.total_points, // Antag att detta är rätt fält från API
+          // Lägg till fler fält här vid behov
+        })));
+        setManagers(teamsData.managers);
+
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
   }, []);
 
-
-
-  const handlePlayerSelection = (teamName, event) => {
-    setSelectedPlayers({
-      ...selectedPlayers,
-      [teamName]: event.target.value,
-    });
+  useEffect(() => {
+    const team = managers.find(team => team.teamName === selectedTeam);
+    if (team) {
+      // Konvertera alla ID:n till nummer
+      const numericStarters = (team.squad.starters.length > 0) 
+        ? team.squad.starters.map(id => Number(id)) 
+        : Array(11).fill('');
+      const numericSubs = (team.squad.subs.length > 0) 
+        ? team.squad.subs.map(id => Number(id)) 
+        : Array(4).fill('');
+  
+      setStartingEleven(numericStarters);
+      setSubs(numericSubs);
+    }
+  }, [selectedTeam, managers]);
+  
+  
+  const handlePlayerSelect = (playerId, index, isSub) => {
+    console.log(`Väljer spelare ${playerId} för position ${index}, isSub: ${isSub}`);
+    if (isSub) {
+      const newSubs = [...subs];
+      newSubs[index] = playerId;
+      console.log(`Nya avbytare: ${newSubs}`);
+      setSubs(newSubs);
+    } else {
+      const newStartingEleven = [...startingEleven];
+      newStartingEleven[index] = playerId;
+      console.log(`Ny startelva: ${newStartingEleven}`);
+      setStartingEleven(newStartingEleven);
+    }
   };
+  
+  
+  
 
-  const handleAddPlayerToTeam = (teamName) => {
-    const playerToAdd = allPlayers.find(
-      (player) =>
-        `${player.first_name}-${player.second_name}` ===
-        selectedPlayers[teamName]
-    );
-
-    if (!playerToAdd) return;
-    axios
-      .post("http://localhost:5000/api/teams/addPlayer", {
-        teamName: teamName,
-        playerId: playerToAdd.id, // Använd id istället för ref
-      })
-      .then((response) => {
-        fetchTeamsWithPlayers(); 
-      })
-      .catch((error) => {
-        console.error("Error adding player:", error);
-      });
+  const handleSubmit = async () => {
+    const teamToUpdate = managers.find((manager) => manager.teamName === selectedTeam);
+    if (teamToUpdate) {
+      // Skapa ett objekt som representerar det uppdaterade laget
+      const updatedTeamData = {
+        ...teamToUpdate,
+        squad: {
+          starters: startingEleven,
+          subs: subs,
+        },
+      };
+  
+      // Gör ett POST-anrop till backend för att spara den nya laguppställningen
+      try {
+        const response = await fetch('http://localhost:5000/api/teams/update', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(updatedTeamData),
+        });
+        if (response.ok) {
+          const responseBody = await response.json();
+          console.log('Laguppställningen har sparats!', responseBody);
+          // Här kan du hantera vad som händer efter att datan har sparats,
+          // t.ex. visa ett meddelande eller navigera användaren.
+        } else {
+          console.error('Ett fel inträffade när laguppställningen skulle sparas.');
+        }
+      } catch (error) {
+        console.error('Ett nätverksfel inträffade:', error);
+      }
+    }
   };
-
-  const handleRemovePlayerFromTeam = (teamName, playerId) => {
-    axios
-      .post("http://localhost:5000/api/teams/removePlayer", {
-        teamName: teamName,
-        playerId: playerId,
-      })
-      .then((response) => {
-        fetchTeamsWithPlayers();
-      })
-      .catch((error) => {
-        console.error("Error removing player:", error);
-      });
+  const getPlayerDetailsById = (playerId) => {
+    // Kontrollera om `playerId` är en tom sträng eller null/undefined
+    if (!playerId) return "Spelare ej vald";
+  
+    // Försök att konvertera `playerId` till en Number om det är en sträng
+    const numericPlayerId = Number(playerId);
+  
+    // Använd `numericPlayerId` för att hitta spelaren
+    const player = players.find((p) => p.id === numericPlayerId);
+  
+    if (player) {
+      return `${player.name} - Position: ${player.elementType || 'Ej tillgänglig'} - Poäng för rundan: ${player.totalPoints || 'Ej tillgänglig'}`;
+    } else {
+      return "Spelare ej vald";
+    }
   };
+  
+  
+  
 
-
-return (
-    <div>
-      <h1>Edit Teams</h1>
-      <ul>
-        {teams.map((team, teamIndex) => (
-          <li key={team.teamName}>
-            {team.teamName}
-            <div>
-              <label>Add Player to {team.teamName}: </label>
-              <select
-                value={selectedPlayers[team.teamName] || ""}
-                onChange={(e) => handlePlayerSelection(team.teamName, e)}
-                className="bg-white px-3 py-2 border rounded"
-              >
-                <option value="" disabled>
-                  Select a player
+  return (
+    <div className="container mx-auto p-4">
+      <h2 className="text-2xl font-bold mb-4">Laguppställning</h2>
+      {loading ? (
+        <div className="flex justify-center items-center">
+          <div className="loader">Laddar...</div>
+        </div>
+      ) : error ? (
+        <p className="text-red-500">Ett fel inträffade: {error}</p>
+      ) : (
+        <>
+          <div>
+            <label htmlFor="team-selector" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Välj ett lag:</label>
+            <select
+              id="team-selector"
+              value={selectedTeam}
+              onChange={(e) => setSelectedTeam(e.target.value)}
+              className="mb-4 p-2 rounded border border-gray-300"
+            >
+              <option value="">Välj ett lag</option>
+              {managers.map((manager) => (
+                <option key={manager.teamName} value={manager.teamName}>
+                  {manager.name} - {manager.teamName}
                 </option>
-                {allPlayers.map((player) => (
-                  <option
-                    key={`${player.first_name}-${player.second_name}`}
-                    value={`${player.first_name}-${player.second_name}`}
-                  >
-                    {player.first_name} {player.second_name}
-                  </option>
-                ))}
-              </select>
-              <button
-                onClick={() => handleAddPlayerToTeam(team.teamName)}
-                className="ml-3 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-              >
-                Lägg till
-              </button>
-            </div>
+              ))}
+            </select>
+          </div>
   
-            <ul>
-              {team.players
-                ? team.players.map((player, playerIndex) => (
-                    <li key={`${player.first_name}-${player.second_name}`}>
-                      {player.first_name} {player.second_name} -{" "}
-                      {player.total_points} points
-                      <button
-                      
-                        onClick={() =>
-                            
-                          handleRemovePlayerFromTeam(team.teamName, player.id)
-                        }
-                        className="ml-3 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
-                      >
-                        Ta bort
-                      </button>
-                    </li>
-                  ))
-                : null}
-            </ul>
-          </li>
-        ))}
-      </ul>
+          {/* Startspelare dropdowns */}
+          <div className="grid grid-cols-3 gap-4 mb-4">
+            <h3 className="col-span-3 text-xl font-semibold mb-2">Startspelare:</h3>
+            {startingEleven.map((playerId, index) => (
+              <div key={`starter-${index}`} className="col-span-1">
+                <label htmlFor={`starter-${index}`} className="block mb-1 text-sm font-medium text-gray-900 dark:text-gray-300">Spelare {index + 1}</label>
+                <select
+                  id={`starter-${index}`}
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2"
+                  value={playerId}
+                  onChange={(e) => handlePlayerSelect(Number(e.target.value), index, false)}
+
+                >
+                  <option value="">Välj en spelare</option>
+                  {players.map((player) => (
+                    <option key={player.id} value={player.id}>
+                      {player.name}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            ))}
+          </div>
+  
+          {/* Avbytare dropdowns */}
+          <div className="grid grid-cols-4 gap-4 mb-4">
+            <h3 className="col-span-4 text-xl font-semibold mb-2">Avbytare:</h3>
+            {subs.map((playerId, index) => (
+              <div key={`sub-${index}`} className="col-span-1">
+                <label htmlFor={`sub-${index}`} className="block mb-1 text-sm font-medium text-gray-900 dark:text-gray-300">Avbytare {index + 1}</label>
+                <select
+                  id={`sub-${index}`}
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2"
+                  value={playerId}
+                  onChange={(e) => handlePlayerSelect(Number(e.target.value), index, true)}
+                >
+                  <option value="">Välj en spelare</option>
+                  {players.map((player) => (
+                    <option key={player.id} value={player.id}>
+                      {player.name}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            ))}
+          </div>
+  
+          <button
+            className="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            onClick={handleSubmit}
+            disabled={!selectedTeam || startingEleven.includes('') || subs.includes('')}
+          >
+            Spara Startelva
+          </button>
+        </>
+      )} 
+       <div>
+      <h3 className="text-xl font-semibold mb-2">Startelva:</h3>
+      <ul>
+  {startingEleven.filter(playerId => playerId).map((playerId, index) => {
+    const playerDetails = getPlayerDetailsById(playerId);
+    return <li key={`starter-${playerId}-${index}`}>{playerDetails}</li>;
+  })}
+</ul>
     </div>
+    <div>
+      <h3 className="text-xl font-semibold mb-2">Avbytare:</h3>
+      <ul>
+  {subs.filter(playerId => playerId).map((playerId, index) => {
+    const playerDetails = getPlayerDetailsById(playerId);
+    return <li key={`sub-${playerId}-${index}`}>{playerDetails}</li>;
+  })}
+</ul>
+    </div>
+
+  </div>
+
   );
+  
+  
   
 };
 

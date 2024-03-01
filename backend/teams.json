@@ -1,0 +1,93 @@
+{
+  "managers": [
+    {
+      "name": "Wilhelm Groth",
+      "teamName": "A team of Carraghers",
+      "squad": {
+        "starters": [],
+        "subs": []
+      },
+      "transfers": []
+    },
+    {
+      "name": "Björn Gabrielsson",
+      "teamName": "FC Premium",
+      "squad": {
+        "starters": [
+          785,
+          10,
+          20,
+          2,
+          11,
+          8,
+          2,
+          6,
+          4,
+          4,
+          9
+        ],
+        "subs": [
+          2,
+          1,
+          2,
+          801
+        ]
+      },
+      "transfers": []
+    },
+    {
+      "name": "Fredrik Torin",
+      "teamName": "Homecoming Queens FC",
+      "squad": {
+        "starters": [],
+        "subs": []
+      },
+      "transfers": []
+    },
+    {
+      "name": "Joel Nordkvist",
+      "teamName": "BK Slaggberget",
+      "squad": {
+        "starters": [],
+        "subs": []
+      },
+      "transfers": []
+    },
+    {
+      "name": "Tommy Forslin",
+      "teamName": "Plopparna",
+      "squad": {
+        "starters": [],
+        "subs": []
+      },
+      "transfers": []
+    },
+    {
+      "name": "Magnus Olofsson",
+      "teamName": "Mini-Spurs",
+      "squad": {
+        "starters": [],
+        "subs": []
+      },
+      "transfers": []
+    },
+    {
+      "name": "Lars Berglund",
+      "teamName": "Villains",
+      "squad": {
+        "starters": [],
+        "subs": []
+      },
+      "transfers": []
+    },
+    {
+      "name": "Mikael Andersson",
+      "teamName": "Källströms Kabaré",
+      "squad": {
+        "starters": [],
+        "subs": []
+      },
+      "transfers": []
+    }
+  ]
+}

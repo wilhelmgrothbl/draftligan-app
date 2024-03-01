@@ -2,217 +2,110 @@ require('dotenv').config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-
-const faunadb = require("faunadb");
-const q = faunadb.query;
+const fs = require("fs");
+const path = require("path");
 const fetch = require("node-fetch");
 const app = express();
-const client = new faunadb.Client({
-  secret: process.env.FAUNADB_SECRET_KEY,
-});
-
 
 // Middleware
 app.use(cors());
 app.use(bodyParser.json());
 
-// Example route
+// Filväg till din teams.json
+const filePath = path.join(__dirname, 'teams.json');
+
+// Testroute för att verifiera att backend fungerar
 app.get("/api/test", (req, res) => {
   res.json({ message: "Backend is working!" });
 });
 
-const PORT = 5000;
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
-});
-
+// Hämta alla spelare från FPL API
 app.get("/api/fpl/players", async (req, res) => {
   try {
-    const response = await fetch(
-      "https://fantasy.premierleague.com/api/bootstrap-static/"
-    );
+    const response = await fetch("https://fantasy.premierleague.com/api/bootstrap-static/");
     const data = await response.json();
+    // Exempel på hur man kan transformera spelardata innan man skickar den till klienten:
     const players = data.elements.map((player) => ({
-      first_name: player.first_name,
-      second_name: player.second_name,
-      total_points: player.total_points,
-      event_points: player.event_points,
+      id: player.id,
+      name: `${player.first_name} ${player.second_name}`,
+      elementType: player.element_type, // Ersätt med korrekt egenskapsnamn
+      totalPoints: player.total_points, // Ersätt med korrekt egenskapsnamn
     }));
     res.json(players);
   } catch (error) {
-    console.error(error); // Logga felet för att se detaljer i din server logg
-    res
-      .status(500)
-      .json({
-        error: "Failed to fetch players from database",
-        details: error.message,
-      });
+    console.error(error);
+    res.status(500).json({ error: "Failed to fetch players from FPL API", details: error.message });
   }
 });
 
-app.get("/api/fpl/savePlayers", async (req, res) => {
-  try {
-    const response = await fetch(
-      "https://fantasy.premierleague.com/api/bootstrap-static/"
-    );
-    const data = await response.json();
 
-    const players = data.elements;
-    const savedPlayers = [];
-
-    for (let player of players) {
-      const result = await client.query(
-        q.Create(q.Collection("Players"), {
-          data: {
-            first_name: player.first_name,
-            second_name: player.second_name,
-            position: player.position,
-            total_points: player.total_points,
-            event_points: player.event_points,
-          },
-        })
-      );
-
-      savedPlayers.push(result);
-    }
-
-    res.json(savedPlayers);
-  } catch (error) {
-    res.status(500).json({ error: "Failed to save players to database" });
-  }
-});
-
-app.get("/api/players", async (req, res) => {
-  try {
-    const players = await client.query(
-      q.Map(
-        q.Paginate(q.Match(q.Index("all_players")), { size: 1000 }),
-        q.Lambda("X", q.Get(q.Var("X")))
-      )
-    );
-    res.json(
-      players.data.map((player) => ({
-        id: player.ref.id,
-        ...player.data,
-      }))
-    );
-  } catch (error) {
-    res.status(500).json({ error: "Failed to fetch players from database" });
-  }
-});
-
-app.get("/api/teams", async (req, res) => {
-  try {
-    const teams = await client.query(
-      q.Map(
-        q.Paginate(q.Match(q.Index("all_teams"))),
-        q.Lambda("X", q.Get(q.Var("X")))
-      )
-    );
-    res.json(teams.data.map((team) => team.data));
-  } catch (error) {
-    res.status(500).json({ error: "Failed to fetch teams from database" });
-  }
-});
-
-app.post("/api/teams/addPlayer", async (req, res) => {
-  const { teamName, playerId } = req.body;
-  let team;
-  try {
-    team = await client.query(
-      q.Get(q.Match(q.Index("teams_by_name"), teamName))
-    );
-  } catch (error) {
-    console.log(error);
-    return res
-      .status(500)
-      .json({ error: "Failed to fetch team", details: error });
-  }
-
-  try {
-    const updatedTeam = await client.query(
-      q.Update(team.ref, {
-        data: {
-          playerIds: [...team.data.playerIds, playerId],
-        },
-      })
-    );
-    res.json(updatedTeam.data);
-  } catch (error) {
-    return res
-      .status(500)
-      .json({ error: "Failed to update team", details: error.message });
-  }
-});
-
-// backend/server.js eller motsvarande fil
-
-app.get("/api/teams/players/:teamName", async (req, res) => {
-    const teamName = req.params.teamName;
-  
-    try {
-      const team = await client.query(
-        q.Get(q.Match(q.Index("teams_by_name"), teamName))
-      );
-      const playerIds = team.data.playerIds;
-  
-      const players = await client.query(
-        q.Map(
-          playerIds,
-          q.Lambda(
-            "playerId",
-            q.Get(q.Ref(q.Collection("Players"), q.Var("playerId")))
-          )
-        )
-      );
-  
-      const playerData = players.map((player) => ({
-        id: player.ref.id,
-        ...player.data
-      }));
-      res.json(playerData);
-    } catch (error) {
-      res
-        .status(500)
-        .json({
-          error: "Failed to fetch players for the team",
-          details: error.message,
-        });
+// Hämta lag från teams.json
+app.get("/api/teams", (req, res) => {
+  fs.readFile(filePath, 'utf8', (err, data) => {
+    if (err) {
+      res.status(500).send('Error reading the file');
+    } else {
+      res.send(JSON.parse(data));
     }
   });
+});
+
+app.post("/api/teams/update", (req, res) => {
+  const updatedTeam = req.body;
   
+  fs.readFile(filePath, 'utf8', (err, data) => {
+    if (err) {
+      res.status(500).send('Error reading the file');
+    } else {
+      const teamsData = JSON.parse(data);
+      const teamIndex = teamsData.managers.findIndex((team) => team.teamName === updatedTeam.teamName);
+      
+      if (teamIndex !== -1) {
+        teamsData.managers[teamIndex] = updatedTeam;
+        fs.writeFile(filePath, JSON.stringify(teamsData, null, 2), 'utf8', (writeErr) => {
+          if (writeErr) {
+            res.status(500).send('Error writing to the file');
+          } else {
+            res.send({ message: 'Team updated successfully', updatedTeam: updatedTeam });
+          }
+        });
+      } else {
+        res.status(404).send('Team not found');
+      }
+    }
+  });
+});
 
-app.post("/api/teams/removePlayer", async (req, res) => {
-  const { teamName, playerId } = req.body;
-  let team;
-  try {
-    team = await client.query(
-      q.Get(q.Match(q.Index("teams_by_name"), teamName))
-    );
-  } catch (error) {
-    return res
-      .status(500)
-      .json({ error: "Failed to fetch team", details: error });
-  }
 
-  if (!team.data.playerIds.includes(playerId)) {
-    return res.status(400).json({ error: "Player is not in the team" });
-  }
+// Uppdatera ett lag i teams.json
+app.post("/api/teams/update", (req, res) => {
+  const updatedTeam = req.body;
+  
+  fs.readFile(filePath, 'utf8', (err, data) => {
+    if (err) {
+      res.status(500).send('Error reading the file');
+    } else {
+      const teamsData = JSON.parse(data);
+      const index = teamsData.managers.findIndex(team => team.teamName === updatedTeam.teamName);
+      
+      if (index !== -1) {
+        teamsData.managers[index] = updatedTeam;
+        fs.writeFile(filePath, JSON.stringify(teamsData, null, 2), 'utf8', err => {
+          if (err) {
+            res.status(500).send('Error writing to the file');
+          } else {
+            res.send('Team updated successfully');
+          }
+        });
+      } else {
+        res.status(404).send('Team not found');
+      }
+    }
+  });
+});
 
-  const updatedPlayerIds = team.data.playerIds.filter((id) => id !== playerId);
-
-  try {
-    const updatedTeam = await client.query(
-      q.Update(team.ref, {
-        data: {
-          playerIds: updatedPlayerIds,
-        },
-      })
-    );
-    res.json(updatedTeam.data);
-  } catch (error) {
-    return res
-      .status(500)
-      .json({ error: "Failed to update team", details: error.message });
-  }
+// Portkonfiguration
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
 });
