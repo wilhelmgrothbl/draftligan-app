@@ -18,5 +18,10 @@ export const MenuItems = [
         title: 'Redigera Lag',
         url: 'edit-team',
         cName: 'nav-links'
+    },
+    {
+        title: 'Tips ans tricks',
+        url: 'tips-and-tricks',
+        cName: 'nav-links'
     }
 ]
