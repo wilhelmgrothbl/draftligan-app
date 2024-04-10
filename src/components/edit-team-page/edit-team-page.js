@@ -23,11 +23,14 @@ const EditTeamPage = () => {
         setPlayers(playersData.map(player => ({
           id: player.id,
           name: `${player.first_name} ${player.second_name}`,
-          elementType: player.element_type, // Antag att detta är rätt fält från API
-          totalPoints: player.total_points, // Antag att detta är rätt fält från API
-          // Lägg till fler fält här vid behov
+          elementType: player.element_type,
+          totalPoints: player.total_points,
         })));
+        console.log(playersData); // Lägg till denna logg
+  
         setManagers(teamsData.managers);
+        console.log(teamsData.managers); // Lägg till denna logg
+        
 
       } catch (err) {
         setError(err.message);
@@ -42,18 +45,21 @@ const EditTeamPage = () => {
   useEffect(() => {
     const team = managers.find(team => team.teamName === selectedTeam);
     if (team) {
-      // Konvertera alla ID:n till nummer
-      const numericStarters = (team.squad.starters.length > 0) 
-        ? team.squad.starters.map(id => Number(id)) 
-        : Array(11).fill('');
-      const numericSubs = (team.squad.subs.length > 0) 
-        ? team.squad.subs.map(id => Number(id)) 
-        : Array(4).fill('');
+      const numericStarters = team.squad.starters.map(id => Number(id));
+      console.log('Manager Starters IDs:', numericStarters);
+      const numericSubs = team.squad.subs.map(id => Number(id));
+      console.log('Manager Subs IDs:', numericSubs);
+  
+      const validStarters = numericStarters.every(id => players.some(player => player.id === id));
+      console.log('Are all starters valid?', validStarters);
+      const validSubs = numericSubs.every(id => players.some(player => player.id === id));
+      console.log('Are all subs valid?', validSubs);
   
       setStartingEleven(numericStarters);
       setSubs(numericSubs);
     }
-  }, [selectedTeam, managers]);
+  }, [selectedTeam, managers, players]); // Lägg till 'players' här för att se till att effekten körs när 'players' uppdateras.
+  
   
   
   const handlePlayerSelect = (playerId, index, isSub) => {
@@ -109,21 +115,25 @@ const EditTeamPage = () => {
     }
   };
   const getPlayerDetailsById = (playerId) => {
-    // Kontrollera om `playerId` är en tom sträng eller null/undefined
     if (!playerId) return "Spelare ej vald";
-  
-    // Försök att konvertera `playerId` till en Number om det är en sträng
+    
     const numericPlayerId = Number(playerId);
-  
-    // Använd `numericPlayerId` för att hitta spelaren
+    console.log('Players array:', players);
+    
     const player = players.find((p) => p.id === numericPlayerId);
-  
+    
+    console.log(`Player found for ID ${numericPlayerId}:`, player);
+    
     if (player) {
-      return `${player.name} - Position: ${player.elementType || 'Ej tillgänglig'} - Poäng för rundan: ${player.totalPoints || 'Ej tillgänglig'}`;
+      return `${player.name ?? 'Namn ej tillgängligt'} - Position: ${player.elementType ?? 'Ej tillgänglig'} - Poäng för rundan: ${player.totalPoints ?? 'Ej tillgänglig'}`;
     } else {
       return "Spelare ej vald";
     }
   };
+  
+  
+  
+  
   
   
   
@@ -215,10 +225,12 @@ const EditTeamPage = () => {
        <div>
       <h3 className="text-xl font-semibold mb-2">Startelva:</h3>
       <ul>
-  {startingEleven.filter(playerId => playerId).map((playerId, index) => {
-    const playerDetails = getPlayerDetailsById(playerId);
-    return <li key={`starter-${playerId}-${index}`}>{playerDetails}</li>;
-  })}
+      {startingEleven.filter(playerId => playerId).map((playerId, index) => {
+  // Use both playerId and index to ensure the key is unique
+  const playerDetails = getPlayerDetailsById(playerId);
+  return <li key={`starter-${playerId}-${index}`}>{playerDetails}</li>;
+})}
+
 </ul>
     </div>
     <div>
