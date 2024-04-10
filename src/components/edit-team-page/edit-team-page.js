@@ -18,7 +18,7 @@ const EditTeamPage = () => {
         const playersResponse = await fetch(playersUrl);
         const teamsResponse = await fetch(teamsUrl);
         const playersData = await playersResponse.json();
-        const teamsData = await teamsResponse.json();
+        const teamsData = await teamsResponse.json(); //s
 
         setPlayers(playersData.map(player => ({
           id: player.id,
