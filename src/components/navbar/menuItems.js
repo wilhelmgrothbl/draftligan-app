@@ -11,7 +11,7 @@ export const MenuItems = [
     },
      {
          title: 'De Efterkloka',
-         url: 'home',
+         url: 'home', //SSSS
          cName: 'nav-links'
      },
      {
