@@ -11,7 +11,7 @@ export const MenuItems = [
     },
      {
          title: 'De Efterkloka',
-         url: 'home', //SSSS
+         url: 'home',
          cName: 'nav-links'
      },
      {
@@ -19,9 +19,9 @@ export const MenuItems = [
         url: 'edit-team',
         cName: 'nav-links'
     },
-    // {
-    //     title: 'Tips ans tricks',
-    //     url: 'tips-and-tricks',
-    //     cName: 'nav-links'
-    // }
+    {
+        title: 'Tips ans tricks',
+        url: 'tips-and-tricks',
+        cName: 'nav-links'
+    }
 ]

@@ -25,7 +25,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/merch" element={<Merch />} />
         <Route path="/edit-team" element={<EditTeamPage />} />
-        {/* <Route path="/tips-and-tricks" element={<TipsAndTricks />} /> */}
+        <Route path="/tips-and-tricks" element={<TipsAndTricks />} />
       </Routes>
 
     </React.Fragment>
